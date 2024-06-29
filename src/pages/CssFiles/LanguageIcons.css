@@ -1,0 +1,573 @@
+
+.language-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .language-icon-c {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-c-50.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+  }
+  .language-icon-python {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-python-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 0.6s; 
+  }
+  .language-icon-java {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-java-64.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 1.2s; 
+  }
+  
+  .language-icon-css {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-css-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 1.8s; 
+  }
+  .language-icon-php {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-php-64.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 2.4s; 
+  }
+  .language-icon-react {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8_react.gif');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 3s; 
+  }
+  .language-icon-vue {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-vue-js-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 3.6s; 
+  }
+  .language-icon-c-sharp {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-c-sharp-logo-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 4.2s; 
+  }
+  .language-icon-django {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-django-24.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 4.8s; 
+  }
+  
+  .language-icon-docker {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-docker-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 5.2s; 
+  }
+  
+  .language-icon-sql {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-sql-64.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 5.8s; 
+  }
+  
+  .language-icon-mongo {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-mongo-db-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 6.4s; 
+  }
+  
+  .language-icon-unity {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-unity-50.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 7s; 
+  }
+  
+  .language-icon-wire {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-wireshark-64.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 7.6s; 
+  }
+  
+  .language-icon-git {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-git-50.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 8.2s; 
+  }
+  
+  .language-icon-figma {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-figma-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 9s; 
+  }
+  
+  .language-icon-gitlab {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-gitlab-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 9.8s; 
+  }
+  
+  .language-icon-github {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-github-50.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 10.7s; 
+  }
+  
+  .language-icon-confluence {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-confluence-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 11.5s; 
+  }
+  
+  .language-icon-jenkins {
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    width: 30px; 
+    height: 30px; 
+    background-image: url('../images/icons8-jenkins-48.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    animation: moveClockwise 13s linear infinite; 
+    animation-delay: 12.3s; 
+  }
+  @keyframes moveClockwise {
+    0% {
+      transform: translate(-55%, -55%) rotate(0deg) translateX(50px) translateY(200px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-55%, -55%) rotate(360deg) translateX(50px) translateY(200px) rotate(-360deg);
+    }
+  }
+
+  .language-c{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-java{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-python{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-html{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .language-css{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-php{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-react{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 70%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-vue{
+    top: 390%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 80%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-c-sharp{
+    top: 405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-django{
+    top: 405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-docker{
+    top:405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-sql{
+    top:405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .language-mongo{
+    top:405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+     
+  .language-unity{
+    top:405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-wire{
+    top:405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 70%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-git{
+    top:405%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 80%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-figma{
+    top:420%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+  
+  .language-gitlab{
+    top:420%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-github{
+    top:420%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .language-confluence{
+    top:420%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: 110px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .language-jenkins{
+    top:420%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+   
+  .language-jama{
+    top:420%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+
+  }

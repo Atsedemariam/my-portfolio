@@ -1,0 +1,60 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .scroll-to-top button:hover {
+    background-color: #0056b3;
+  }
+  
+  .scroll-to-top button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Initially hide scroll to top button */
+  .scroll-to-top button:first-child {
+    display: none;
+  }
+  
+  /* Show scroll to top button when visible */
+  .scroll-to-top.visible button:first-child {
+    display: block;
+  }
+  
+  /* Hide scroll to bottom button when scroll to top button is visible */
+  .scroll-to-top.visible button:last-child {
+    display: none;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .back-to-top.visible {
+    opacity: 1;
+  }
+  
+  

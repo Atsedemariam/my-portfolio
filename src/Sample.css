@@ -1,0 +1,35 @@
+body {
+  /* background-color: aquamarine; */
+  margin: 0;
+  padding: 0;
+}
+.containers {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+}
+.right_t {
+  flex:1;
+  background-color: lightcoral;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.sidebar-item {
+  display: block;
+  height: 100px;
+  background-color: lightseagreen;
+  margin: 5px;
+}
+.headers {
+  display: block;
+  height: 100px;
+  flex:none;
+  background-color: aqua;
+}
+.contents {
+  flex:1;
+  background-color: brown;
+  display: flex;
+  overflow: auto;
+}

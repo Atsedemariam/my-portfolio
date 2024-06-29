@@ -1,0 +1,28 @@
+.language-toggler {
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    padding: 10px 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .language-toggler:hover {
+    transform: translateY(-8px); 
+  }
+  
+  .lan-icon-am {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.5) contrast(200%);
+  }
+  .lan-icon-en {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

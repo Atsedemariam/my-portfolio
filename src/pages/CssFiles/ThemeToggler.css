@@ -1,0 +1,32 @@
+/* ThemeToggler.css */
+
+.theme-toggler {
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    padding: 10px 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+    /* height: 20px; */
+  }
+  
+  .theme-toggler:hover {
+    transform: translateY(-8px); 
+  }
+  
+  .theme-icon-sun {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0) invert(1);
+  }
+  .theme-icon-moon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

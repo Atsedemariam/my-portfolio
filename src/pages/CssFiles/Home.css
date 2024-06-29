@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
+
+:root {
+  --red: #004225;
+  --bgColor: bisque;
+  }
+.container {
+  position: relative;
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--red)
+}
+.scrollable-container-home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto; 
+  display: flex;
+}
+
+.circle-container {
+position: relative;
+left: 10%;
+display: flex;
+justify-content: center; 
+align-items: center; 
+} 
+.circle-image {
+width: 300px; 
+height: 300px; 
+border-radius: 50%; 
+background-image: url('../images/R.jpeg'); 
+background-size: cover; 
+animation: rotate 5s linear infinite;
+}
+.profile {
+position: absolute;
+top: 50%;
+right: 10%;
+transform: translateY(-50%);
+width: 400px; 
+padding: 20px;
+}
+.salutation{
+font-size: 20px;
+font-weight: bold;
+font-family: Inconsolata;
+}
+.text{
+font-size: 20px;
+}
+.wave {
+box-shadow:
+    -50px -50px 0 -40px var(--red),
+    50px 50px 0 -40px var(--red);
+    /* color: var(white); */
+}
+  
+  
+.wave {
+  float: left;
+  margin: 20px;
+  animation: wave  ease-in-out 0.5s infinite alternate;
+  transform-origin: center -36px;
+}
+
+.wave:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.wave img {
+  border: 5px solid #f8f8f8;
+  display: block;
+  width: 200px;
+  height: 250px;
+}
+
+.wave figcaption {
+  text-align: center;
+}
+
+.wave:after{
+  content: '';
+  position: absolute;
+  width: 18px; 
+  height: 12px;
+  border: 2px solid gray;
+  top: -17px; 
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(35deg);
+}
+       
+.wave:before{
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 49%;
+  display: block;
+  height: 44px;
+  width: 47px;
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  z-index: 16;
+}
+        
+@keyframes wave {
+  0% { transform: rotate(0.5deg); }
+  100% { transform: rotate(-0.5deg); }
+}
