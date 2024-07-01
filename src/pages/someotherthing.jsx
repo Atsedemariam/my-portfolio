@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState } from 'react';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Home from './pages/Home';
 // import About from './pages/About';
@@ -6,14 +6,25 @@ import React from 'react';
 // import FAQs from './pages/FAQ';
 // import Sample from './pages/Sample';
 // import ScrollToTopText from './pages/ScrollToTop'; 
-
+// import Alert from '@mui/material/Alert';
 import BackToTopButton from './BackToTopButton';
 // import ScrollToTopButton from './ScrollToTopButton'
+// import React from 'react';
+import Popup from './Popup'; // Adjust path as per your file structure
 
 function ScrollToTopTexyt() {
+  const [showPopup, setShowPopup] = useState(true); // Set to true to show popup initially
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <div>
-
+      {/* Render Popup component conditionally */}
+      {showPopup && (
+        <Popup message="I am alert, nice to meet you" onClose={handleClosePopup} />
+      )}
 Stop it, stop it. It's fine. I will 'destroy' you!
 Hi, I'm a naughty nurse, and I really need someone to talk to. $9.95 a minute. The alien mothership is in orbit here. If we can hit that bullseye, the rest of the dominoes will fall like a house of cards. Checkmate.
 

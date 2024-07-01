@@ -5,6 +5,8 @@ import './CssFiles/Contact.css';
 import { ThemeContext } from "./themeContext";
 import './CssFiles/Footer.css'; 
 
+import { useLanguage } from './LanguageContext';
+import languages from './languages'; // Import the language file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTelegram, faXTwitter, faLinkedin, faGitlab, faMastodon } from '@fortawesome/free-brands-svg-icons';
 
@@ -12,6 +14,7 @@ export default function Contact() {
 
   const { toggle } = React.useContext(ThemeContext);
 
+  const { language } = useLanguage();
   const handleSubmit = (e) => {
     e.preventDefault();
     // You can add form validation logic here if needed
@@ -39,34 +42,34 @@ export default function Contact() {
       <div className="scrollable-container-contact">
 
           <div className="contact-form">
-            <h2>Want to say something?</h2>
+            <h2>{languages[language].contact_form}</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input className = 'input' type="text" id="name" name="name" placeholder="Your name" required/>
+                <label htmlFor="name">{languages[language].name_q}</label>
+                <input className = 'input' type="text" id="name" name="name" placeholder={languages[language].placeholder_name} required/>
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input className = 'input' type="email" id="email" name="email" placeholder="Your email" required />
+                <label htmlFor="email">{languages[language].email}</label>
+                <input className = 'input' type="email" id="email" name="email" placeholder={languages[language].placeholder_email} required />
               </div>
               <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input className = 'input' type="text" id="subject" name="subject" placeholder="Subject" required />
+                <label htmlFor="subject">{languages[language].subject}</label>
+                <input className = 'input' type="text" id="subject" name="subject" placeholder={languages[language].placeholder_subject} required />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea className = 'input' id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+                <label htmlFor="message">{languages[language].message}</label>
+                <textarea className = 'input' id="message" name="message" placeholder={languages[language].placeholder_message} rows="4" required></textarea>
               </div>
-              <button type="submit" style={toggle ? {background: "#414a4c" } : {}}>Send Message</button>
+              <button type="submit" style={toggle ? {background: "#414a4c" } : {}}>{languages[language].submit}</button>
             </form>
           </div>
           <div className="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> latseden@gmail.com</p>
-            <p><strong>Phone:</strong> +251905518244</p>
-            <p><strong>Location:</strong> Bahirdar, Ethiopia</p>
-            <p><strong>Availability:</strong> Mon-Fri, 9am-5pm</p>
-            <p><strong>Response Time:</strong> Within 24 hours</p>
+            <h2>{languages[language].contact_info}</h2>
+            <p><strong>{languages[language].email}:</strong> latseden@gmail.com</p>
+            <p><strong>{languages[language].phone}:</strong> +251905518244</p>
+            <p><strong>{languages[language].location}:</strong> {languages[language].location_a}</p>
+            <p><strong>{languages[language].availability}:</strong> {languages[language].availability_a}</p>
+            <p><strong>{languages[language].response}:</strong> {languages[language].response_a}</p>
           </div>
 
         
@@ -88,7 +91,7 @@ export default function Contact() {
 
         
         <div className="contact-text">
-          <p>Get in Touch</p>
+          <p style={{ fontSize: language === 'en' ? "inherit" : "25px" }}>{languages[language].get_in_touch}</p>
         </div>
       </div>
     </div>

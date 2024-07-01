@@ -6,11 +6,21 @@ import './CssFiles/FAQs.css'; // Import your external CSS file for FAQs styling
 
 import { ThemeContext } from "./themeContext";
 
+import { useLanguage } from './LanguageContext';
+import Popup from './Popup'; // Adjust path as per your file structure
 import './CssFiles/Footer.css'; 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTelegram, faXTwitter, faLinkedin, faGitlab, faMastodon } from '@fortawesome/free-brands-svg-icons';
 const FAQs = () => {
+  const [showPopup, setShowPopup] = useState(true); // Set to true to show popup initially
+
+  const { language } = useLanguage();
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   const { toggle } = React.useContext(ThemeContext);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [hoveredIndex, setHoveredIndex] = useState(null); // Track hovered index
@@ -79,9 +89,17 @@ const FAQs = () => {
   const handleMouseLeave = () => {
     setHoveredIndex(null); // Clear hovered index
   };
-
+  let text = ["ይህን ገጽ ወደ አማርኛ አልተረጎምኩትም፤",
+    <br/>,
+    <br/>,
+    "አይጥ ወልዳ ወልዳ... 😊"];
   return (
     <div className='container' style={toggle ? {backgroundColor: "#292929", color:"white"} : {}}>
+    {/* <div> */}
+      {language === 'en' ? null : (showPopup && (
+        <Popup message={text} onClose={handleClosePopup}  />
+      ))}
+    {/* </div> */}
       <Header />
       <div className="scrollable-container-contact">
         <div className="faq-container">

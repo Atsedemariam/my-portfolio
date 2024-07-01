@@ -86,52 +86,36 @@ const About = () => {
           </a>
         </div>
         <div className='journey'> 
-              <p>
-              Embark on a journey with me as I delve into the depths of my role, project, and the extraordinary company that fueled my passion. 
-              More than just a Quality Assurance Engineer, my time with Polaris transcended mere job descriptions. At the heart of Tern Systems, 
-              Polaris stands tall as the flagship ATM suite, a culmination of innovation and precision meticulously crafted from systems deployed 
-              across Iceland, South Korea, and Indonesia.
-              </p>
+              <p>{languages[language].journey}</p>
         </div>
         <div className='journey_2'>
-          <p>
-            My journey with Polaris took an intriguing turn as I found myself immersed in a project tailored for the Hungarian airlines. 
-            This opportunity not only widened my horizons but also granted me the privilege of collaborating with industry experts in the development 
-            of a software so rare it could be counted on fingers. Within the labyrinth of Polaris SNS, I gained invaluable insights into the intricate 
-            workings of Air Traffic Control (ATC).
-
-            Navigating through the complexities of Polaris SNS, including its Ground Station Safety Net features like Short Term Conflict Alert (STCA), 
-            Area Proximity Warning (APW), Rout Adherence Monitoring (RAM), Airspace Infringement Waning (AIW), CLAM, DSAM, etc. honed my skills 
-            as a Quality Assurance Engineer, actively involved in the development process, meticulously ensuring the integrity and reliability of the 
-            code being crafted. This hands-on experience allowed me to immerse myself in the intricacies of the project, ensuring that every aspect of 
-            the software met the stringent standards required for ground station safety and efficiency.
-          </p>
+          <p>{languages[language].journey_2}</p>
         </div>
         <div className='divider_3' style={toggle ? { background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}/>
         
-        <div className='education_text'><p>Education</p></div>
+        <div className='education_text'><p>{languages[language].education_text}</p></div>
 
         <div className='graduating_hat' style={toggle ? { filter: 'brightness(0) invert(1)'} : {}}>
           <img className="image" src="../kk.png" alt=""/>
         </div>
 
         <div className='edu_1' style={toggle ? { background: '#414a4c' } : {}}>
-            <p className='prof'>Software Engineering </p>
-            <p className='date'>nov 2017 - sept 2021</p>
-            <p className='comp'>Bahirdar University</p>
-            <p className='gpa'>cGPA 3.84</p>
+            <p className='prof'> {languages[language].edu_1_prof}</p>
+            <p className='date'>{languages[language].edu_1_date}</p>
+            <p className='comp'>{languages[language].edu_1_comp}</p>
+            <p className='gpa'>{languages[language].edu_1_gpa}</p>
         </div>
         
         <div className='edu_2' style={toggle ? { background: '#414a4c' } : {}}>
-            <p className='prof'>Management </p>
-            <p className='date'>nov 2018 - aug 2022</p>
-            <p className='comp'>Bahirdar University</p>
-            <p className='gpa'>cGPA 3.60</p>
+            <p className='prof'> {languages[language].edu_2_prof}</p>
+            <p className='date'>{languages[language].edu_2_date}</p>
+            <p className='comp'>{languages[language].edu_2_comp}</p>
+            <p className='gpa'>{languages[language].edu_2_gpa}</p>
         </div>
         
         <div className='divider_4' style={toggle ? { background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}/>
 
-        <div className='skill_text' ><p>Skills</p></div>
+        <div className='skill_text' ><p>{languages[language].skill_text}</p></div>
         <div className="language-c" style={toggle ? { color: 'black', background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}><p>C++</p></div>
           <div className="language-java" style={toggle ? { color: 'black', background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}><p>Java</p></div>
           <div className="language-python" style={toggle ? { color: 'black', background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}><p>Python</p></div>
@@ -158,24 +142,15 @@ const About = () => {
         <div className='divider_5' style={toggle ? { background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}/>
 
         
-        <div className='mission_text'><p>Professional Mission and Personal Aspiration</p></div>
+        <div className='mission_text' style={language ==='en'? {}:{left:"38%"}}><p>{languages[language].mission_text}</p></div>
 
         <div className='mission_paragraph'>
-          <p>
-            I am dedicated to excelling in every project I undertake as a software engineer. With a passion for innovation and problem-solving, 
-            I strive to deliver high-quality solutions that meet and exceed expectations. My commitment to continuous learning and improvement 
-            drives me to stay updated with the latest technologies and industry trends, ensuring that I can contribute effectively to any team or project.
-
-            Beyond my professional goals, I aspire to make a meaningful impact in Ethiopia, my homeland. I am driven by the desire to contribute towards 
-            initiatives that uplift and empower communities, particularly focusing on leveraging technology to address socio-economic challenges. 
-            It is my ambition to leave a positive legacy by leveraging my skills and resources to create lasting change and opportunities for those in need.
-          </p>
-        </div>
+          <p><p>{languages[language].mission_paragraph}</p></p></div>
         <div class="cv-section">
         <div class="cv-content">
-          <p>I think you have an insight about me now. Need CV?</p>
-          <a href="./images/Atsedemariam-resume.pdf" class="download-link" download>
-            <span class="download-label">Download</span>
+          <p>{languages[language].cv_content}</p>
+          <a href="./images/Atsedemariam-resume.pdf" class="download-link" download style={toggle ? {background: "#414a4c" } : {}}>
+            <span class="download-label">{languages[language].download_label}</span>
             <span class="download-icon">&#8595;</span>
           </a>
         </div>
