@@ -139,7 +139,7 @@ const About = () => {
           <div className="language-jenkins" style={toggle ? { color: 'black', background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}><p>Jenkins</p></div>
           <div className="language-jama" style={toggle ? { color: 'black', background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}><p>Jama</p></div>
       
-        <div className='divider_5' style={toggle ? { background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}/>
+          <div className='divider_5' style={toggle ? { background: 'linear-gradient(to right, transparent, white, transparent)' } : {}}/>
 
         
         <div className='mission_text' style={language ==='en'? {}:{left:"38%"}}><p>{languages[language].mission_text}</p></div>

@@ -1,4 +1,3 @@
-
 .language-icons {
     position: absolute;
     top: 0;
@@ -266,17 +265,105 @@
       transform: translate(-55%, -55%) rotate(360deg) translateX(50px) translateY(200px) rotate(-360deg);
     }
   }
+  @media screen and (min-width: 999px) and (max-width: 1199px) {
+   
+    @keyframes moveClockwise {
+      0% {
+        transform: translate(-55%, -55%) rotate(0deg) translateX(40px) translateY(160px) rotate(0deg);
+      }
+      100% {
+        transform: translate(-55%, -55%) rotate(360deg) translateX(40px) translateY(160px) rotate(-360deg);
+      }
+    }
+  }
 
+  @media screen and (min-width: 799px) and (max-width: 999px) {
+   
+    @keyframes moveClockwise {
+      0% {
+        transform: translate(-55%, -55%) rotate(0deg) translateX(50px) translateY(140px) rotate(0deg);
+      }
+      100% {
+        transform: translate(-55%, -55%) rotate(360deg) translateX(50px) translateY(140px) rotate(-360deg);
+      }
+    }
+  }
+  @media screen and (min-width: 599px) and (max-width: 798px) {
+   
+    @keyframes moveClockwise {
+      0% {
+        transform: translate(-55%, -55%) rotate(0deg) translateX(30px) translateY(120px) rotate(0deg);
+      }
+      100% {
+        transform: translate(-55%, -55%) rotate(360deg) translateX(30px) translateY(120px) rotate(-360deg);
+      }
+    }
+  }
+  @media screen and (min-width: 299px) and (max-width: 598px) {
+   
+    @keyframes moveClockwise {
+      0% {
+        transform: translate(-55%, -55%) rotate(0deg) translateX(30px) translateY(100px) rotate(0deg);
+      }
+      100% {
+        transform: translate(-55%, -55%) rotate(360deg) translateX(30px) translateY(100px) rotate(-360deg);
+      }
+    }
+  }
+  :root {
+    --base-width-lan-lan: calc(100px + 0.02195 * (100vw - 1366px));
+    --base-height-lan-lan: calc(70px + 0.02195 * (100vw - 1366px));
+    --base-border-radius-lan-lan: calc(20px + 0.02195 * (100vw - 1366px)); ;
+    --base-font-size-lan-lan: calc(20px + 0.02195 * (100vw - 1366px)); ;
+  
+  }
+
+  @media screen and (min-width: 999px) and (max-width: 1199px) {
+  :root {
+      --base-width-lan-lan: calc(90px + 0.02195 * (100vw - 1366px));
+      --base-height-lan-lan: calc(60px + 0.02195 * (100vw - 1366px));
+      --base-border-radius-lan-lan: calc(20px + 0.02195 * (100vw - 1366px)); ;
+      --base-font-size-lan-lan: calc(20px + 0.02195 * (100vw - 1366px)); ;
+    
+    }
+  }
+  @media screen and (min-width: 799px) and (max-width: 999px) {
+    :root {
+        --base-width-lan-lan: calc(80px + 0.02195 * (100vw - 1366px));
+        --base-height-lan-lan: calc(50px + 0.02195 * (100vw - 1366px));
+        --base-border-radius-lan-lan: calc(20px + 0.02195 * (100vw - 1366px)); ;
+        --base-font-size-lan-lan: calc(22px + 0.02195 * (100vw - 1366px)); ;
+      
+      }
+    }
+    @media screen and (min-width: 599px) and (max-width: 798px) {
+      :root {
+          --base-width-lan-lan: calc(70px + 0.02195 * (100vw - 1366px));
+          --base-height-lan-lan: calc(40px + 0.02195 * (100vw - 1366px));
+          --base-border-radius-lan-lan: calc(20px + 0.02195 * (100vw - 1366px)); ;
+          --base-font-size-lan-lan: calc(25px + 0.02195 * (100vw - 1366px)); ;
+        
+        }
+      }
+      @media screen and (min-width: 299px) and (max-width: 598px) {
+        :root {
+            --base-width-lan-lan: calc(60px + 0.02195 * (100vw - 1366px));
+            --base-height-lan-lan: calc(40px + 0.02195 * (100vw - 1366px));
+            --base-border-radius-lan-lan: calc(20px + 0.02195 * (100vw - 1366px)); ;
+            --base-font-size-lan-lan: calc(27px + 0.02195 * (100vw - 1366px)); ;
+          
+          }
+        }
   .language-c{
     top: 390%;
     background-color: #d0f0c0;
     text-align: center;
     position: absolute;
     left: 10%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -287,10 +374,10 @@
     text-align: center;
     position: absolute;
     left: 20%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -301,10 +388,10 @@
     text-align: center;
     position: absolute;
     left: 30%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -315,10 +402,10 @@
     text-align: center;
     position: absolute;
     left: 40%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
   }
 
@@ -328,10 +415,10 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -342,10 +429,10 @@
     text-align: center;
     position: absolute;
     left: 60%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -356,10 +443,10 @@
     text-align: center;
     position: absolute;
     left: 70%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -370,10 +457,10 @@
     text-align: center;
     position: absolute;
     left: 80%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -384,10 +471,10 @@
     text-align: center;
     position: absolute;
     left: 10%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -398,10 +485,10 @@
     text-align: center;
     position: absolute;
     left: 20%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -412,10 +499,10 @@
     text-align: center;
     position: absolute;
     left: 30%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -426,10 +513,10 @@
     text-align: center;
     position: absolute;
     left: 40%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
   }
 
@@ -439,10 +526,10 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -453,10 +540,10 @@
     text-align: center;
     position: absolute;
     left: 60%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -467,10 +554,10 @@
     text-align: center;
     position: absolute;
     left: 70%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -481,10 +568,10 @@
     text-align: center;
     position: absolute;
     left: 80%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -495,10 +582,10 @@
     text-align: center;
     position: absolute;
     left: 10%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -509,10 +596,10 @@
     text-align: center;
     position: absolute;
     left: 20%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -523,10 +610,10 @@
     text-align: center;
     position: absolute;
     left: 30%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -537,12 +624,26 @@
     text-align: center;
     position: absolute;
     left: 40%;
-    width: 110px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
   }
+  @media screen and (min-width: 1367px) {
+  .language-confluence{
+    top:420%;
+    background-color: #d0f0c0;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    width: calc(150px + 0.02195 * (100vw - 1366px));
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
+    font-weight: bold;
+  }
+    }
   
   .language-jenkins{
     top:420%;
@@ -550,10 +651,10 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }
@@ -564,10 +665,10 @@
     text-align: center;
     position: absolute;
     left: 60%;
-    width: 100px;
-    height: 70px;
-    border-radius: 20px; 
-    font-size: 20px;
+    width: var(--base-width-lan-lan);
+    height: var(--base-height-lan-lan);
+    border-radius: var(--base-border-radius-lan-lan); 
+    font-size: var(--base-font-size-lan-lan);
     font-weight: bold;
 
   }

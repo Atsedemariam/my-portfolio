@@ -23,7 +23,7 @@ const Popup = ({ message, onClose }) => {
 
   return (
     isVisible && (
-      <div className="popup"  style={toggle ? {backgroundColor: "rgba(65, 74, 76, 0.75)", color:"white"} : {}} >
+      <div className="popup"  style={toggle ? {backgroundColor: "rgba(65, 74, 76, 0.75)", color:"white", boxShadow: " 0 0 10px rgb(192, 192, 192, 0.9)" } : {}} >
         <span className="close" onClick={handleClose}>&times;</span>
         <div className="popup-content">
           <p>{message}</p>

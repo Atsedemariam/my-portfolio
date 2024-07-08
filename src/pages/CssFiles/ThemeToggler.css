@@ -1,20 +1,32 @@
-/* ThemeToggler.css */
-
 .theme-toggler {
     background-color: transparent;
     border-radius: 50%;
     border: none;
-    padding: 10px 10px;
+    padding: calc(10px + 0.02195 * (100vw - 1366px)) calc(10px + 0.02195 * (100vw - 1366px));
     transition: transform 0.3s ease;
     cursor: pointer;
-    
-    /* height: 20px; */
   }
   
   .theme-toggler:hover {
-    transform: translateY(-8px); 
+    transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
   }
-  
+   .theme-icon-sun {
+    width: calc(24px + 0.02195  * (100vw - 1366px));
+    height: calc(24px + 0.02195  * (100vw - 1366px));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0) invert(1);
+  }
+  .theme-icon-moon {
+    width: calc(24px + 0.02195  * (100vw - 1366px));
+    height: calc(24px + 0.02195  * (100vw - 1366px));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1366px) {
   .theme-icon-sun {
     width: 24px;
     height: 24px;
@@ -29,4 +41,22 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  }}
+  @media screen and (min-width: 300px) and (max-width: 999px) {
+    .theme-icon-sun {
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: brightness(0) invert(1);
+    }
+    .theme-icon-moon {
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
+

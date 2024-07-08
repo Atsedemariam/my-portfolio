@@ -130,6 +130,7 @@ const FAQs = () => {
             ))}
           </div>
         </div>
+        </div>
         <div className="site-footer_faq" style={toggle ? { "--red":"white", background: "#292929", boxShadow: " 0 0 10px rgba(255,255,255, 0.9)" } : {}}>
           <div className="footer-content">
             <div className="footer-left">
@@ -145,7 +146,6 @@ const FAQs = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

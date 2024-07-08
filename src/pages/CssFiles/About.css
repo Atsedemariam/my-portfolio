@@ -2,8 +2,8 @@
 
 .container {
     position: relative;
-    width: 100vw; /* take up 100% of the viewport width */
-    height: 100vh; /* take up 100% of the viewport height */
+    width: 100vw; 
+    height: 100vh; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,9 +13,9 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto; 
     display: flex;
-    flex-direction: column; /* Display children in a column layout */
+    flex-direction: column; 
   }
   
   .lili-container {
@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+    
   .about-me {
     position: absolute; 
     top: 55%;
@@ -40,41 +40,38 @@
     width: 50vw;
     height: 55vh;
     font-weight: bold;
-    font-size: 20px;
+    font-size: calc(20px + 0.02195  * (100vw - 1366px));
     text-align: justify;
     font-family: Lato;
     
   }    
 
-.portfolio-paragraph {
+  .portfolio-paragraph {
   line-height: 1.8; 
-}
+  }
 
-.divider {
+  .divider {
     width: 100%;
     position: absolute;
     top: 90%; 
-    height: 3px; 
+    height: calc(1px + 0.02195  * (100vw - 1366px)); 
     background: linear-gradient(to right, transparent, #004225, transparent); 
     
-    /* background: radial-gradient(circle, transparent, #004225);  */
-    margin: 20px 0;
+    margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
   }
 
-
-.right_t {
+  .right_t {
     overflow: auto;
     scroll-behavior: smooth;
   }
-
 
   .experience_text {
     position: absolute;
     top: 91%; 
     left: 40%; 
     width: 50vw;
-    padding: 20px;
-    font-size: 30px;
+    padding: calc(20px + 0.02195  * (100vw - 1366px));
+    font-size: calc(30px + 0.02195  * (100vw - 1366px));
     line-height: 1.5;
     font-weight: bold;
     font-family: irish grover;
@@ -96,56 +93,57 @@
     mix-blend-mode: multiply; 
     pointer-events: none;
   }
+
   .exp_1 {
     position: absolute;
     top: 115%;
     right: 10%;
-    width: 450px; 
-    height: 110px;
+    width: calc(450px + 0.02195  * (100vw - 1366px)); 
+    height: calc(110px + 0.02195  * (100vw - 1366px));
     background-color: #e9ffdb   ;
-    border-radius: 20px; 
-    padding: 10px;
+    border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+    padding: calc(10px + 0.02195  * (100vw - 1366px));
     text-align: center;
     
     line-height: 1;
   }
   .exp_1:hover {
-    transform: translateY(-18px); 
+    transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
   }
 
   .prof{
-    font-size: 20px;
+    font-size: translateY(calc(20px + 0.02195 * (100vw - 1366px)));
     font-weight: bold;
   }
   .date, .gpa{
     font-weight: bold;
-    font-size: 13px;
+    font-size: calc(13px + 0.02195  * (100vw - 1366px));
   }
   .comp{
     font-weight: bold;
-    font-size: 16px;
+    font-size: calc(16px + 0.02195  * (100vw - 1366px));
   }
 
   .exp_2 {
     position: absolute;
     top: 145%;
     right: 10%;
-    width: 450px; 
-    height: 110px; 
+    width: calc(450px + 0.02195  * (100vw - 1366px)); 
+    height: calc(110px + 0.02195  * (100vw - 1366px)); 
     background-color: #e9ffdb   ;
-    border-radius: 20px; 
-    padding: 10px;
+    border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+    padding: calc(10px + 0.02195  * (100vw - 1366px));
     text-align: center;
     
     line-height: 1;
   }
   .exp_2:hover {
-    transform: translateY(-18px); 
+    transform: translateY(calc(-18px - 0.02195 * (100vw - 1366px))); 
   }
   .comp_l{
     font-weight: bold;
-    font-size: 16px;
-  
+    font-size: calc(16px + 0.02195  * (100vw - 1366px));
+
     color: #004225;
   }
 
@@ -153,17 +151,17 @@
     position: absolute;
     top: 175%;
     right: 10%;
-    width: 450px; 
-    height: 110px; 
+    width: calc(450px + 0.02195  * (100vw - 1366px)); 
+    height: calc(110px + 0.02195  * (100vw - 1366px)); 
     background-color: #e9ffdb   ;
-    border-radius: 20px; 
-    padding: 10px;
+    border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+    padding: calc(10px + 0.02195  * (100vw - 1366px));
     text-align: center;
     line-height: 1;
   }
 
   .exp_3:hover {
-    transform: translateY(-18px); 
+    transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
   }
 
 
@@ -171,9 +169,9 @@
     width: 100%;
     position: absolute;
     top: 200%; 
-    height: 3px; 
+    height: calc(3px + 0.02195  * (100vw - 1366px)); 
     background: linear-gradient(to right, transparent, #004225, transparent); 
-    margin: 20px 0;
+    margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
   }
 
   .journey_text {
@@ -181,8 +179,8 @@
     top: 199%; 
     left: 27%; 
     width: 50vw;
-    padding: 20px;
-    font-size: 30px;
+    padding: calc(20px + 0.02195  * (100vw - 1366px));
+    font-size: calc(30px + 0.02195  * (100vw - 1366px));
     line-height: 1.5;
     font-weight: bold;
     font-family: irish grover;
@@ -190,7 +188,7 @@
 
   .custom-div {
     position: absolute;
-    top: 222%;
+    top: calc(220% + 0.02195 * (100vw - 1366px));
     left: 10%;
     width: 30vw;
     height: 20vh;
@@ -201,25 +199,26 @@
     background-position: center;
     background-image: url('../images/polaris.png');
     cursor: pointer;
+    /* background-color: blue; */
   }
   .custom-link {
     display: block;
     width: 100%;
     height: 100%;
-    text-indent: -9999px; /* This hides the link text */
+    text-indent: calc(-9999px + 0.02195  * (100vw - 1366px)); /* This hides the link text */
   }
-  
- 
+
+
   .journey{
     position: absolute;
-    top: 220%;
+    top: calc(218% + 0.02195 * (100vw - 1366px));
     right: 10%;
     width: 40vw;
     height: 25vh;
     background-color: transparent; 
     
     line-height: 1.5;
-    font-size: 16px;
+    font-size: calc(15px + 0.02195 * (100vw - 1366px));
     font-weight: bold;
     background-size: contain;
     background-repeat: no-repeat;
@@ -231,11 +230,11 @@
 
   .journey_2{
     position: absolute;
-    top: 250%;
+    top: calc(250% + 0.02195 * (100vw - 1366px));
     left: 10%;
     right: 10%;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: calc(15px + 0.02195 * (100vw - 1366px));
     font-weight: bold;
     background-color: transparent; 
     
@@ -249,37 +248,24 @@
   .divider_3 {
     width: 100%;
     position: absolute;
-    top: 285%; /* Adjust this value based on your layout */
-    height: 3px; 
+    top: calc(292% + 0.02195 * (100vw - 1366px)); /* was 285 */
+    height: calc(3px + 0.02195 * (100vw - 1366px)); 
     background: linear-gradient(to right, transparent, #004225, transparent); 
     margin: 20px 0;
   }
-  
-  .text-overlay {
-    position: absolute;
-    bottom: 10px; /* Adjust the positioning of the text overlay */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust background color and opacity */
-    padding: 5px 10px; /* Adjust padding as needed */
-    color: #000; /* Text color */
-    font-size: 14px; /* Font size */
-    font-weight: bold; /* Font weight */
-    text-align: center; /* Center align text */
-    pointer-events: none; /* Ensures text does not interfere with clickability */
-  }
+
   .education_text{
-    top: 286%;
+    top: calc(293% + 0.02195 * (100vw - 1366px)); /*was 286 */
     position: absolute;
     left: 42%; 
     width: 50vw;
-    padding: 20px;
-    font-size: 30px;
+    padding: calc(20px + 0.02195 * (100vw - 1366px));
+    font-size: calc(30px + 0.02195 * (100vw - 1366px));
     line-height: 1.5;
     font-weight: bold;
     font-family: irish grover;
   }
-  
+
   .graduating_hat{
     
     position: absolute; 
@@ -294,48 +280,48 @@
     background-position: center;
   }
 
-  
+
   .edu_1 {
     position: absolute;
     top: 310%;
     right: 10%;
-    width: 450px; 
-    height: 135px; 
+    width: calc(450px + 0.02195 * (100vw - 1366px)); 
+    height: calc(135px + 0.02195 * (100vw - 1366px)); 
     background-color: #e9ffdb   ;
-    border-radius: 20px; 
-    padding: 10px;
+    border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+    padding: calc(10px + 0.02195 * (100vw - 1366px));
     text-align: center;
     line-height: 1;
   }
 
   .edu_1:hover {
-    transform: translateY(-18px); 
+    transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
   }
 
   .edu_2 {
     position: absolute;
     top: 340%;
     right: 10%;
-    width: 450px; 
-    height: 135px; 
+    width: calc(450px + 0.02195 * (100vw - 1366px)); 
+    height: calc(135px + 0.02195 * (100vw - 1366px)); 
     background-color: #e9ffdb   ;
-    border-radius: 20px; 
-    padding: 10px;
+    border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+    padding: calc(10px + 0.02195 * (100vw - 1366px));
     text-align: center;
     line-height: 1;
   }
 
   .edu_2:hover {
-    transform: translateY(-18px); 
+    transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
   }
 
   .divider_4 {
     width: 100%;
     position: absolute;
     top: 370%; 
-    height: 3px; 
+    height: calc(3px + 0.02195 * (100vw - 1366px)); 
     background: linear-gradient(to right, transparent, #004225, transparent); 
-    margin: 20px 0;
+    margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
   }
 
   .skill_text{
@@ -343,8 +329,8 @@
     position: absolute;
     left: 45%; 
     width: 50vw;
-    padding: 20px;
-    font-size: 30px;
+    padding: calc(20px + 0.02195 * (100vw - 1366px));
+    font-size: calc(30px + 0.02195 * (100vw - 1366px));
     line-height: 1.5;
     font-weight: bold;
     font-family: irish grover;
@@ -354,9 +340,9 @@
     width: 100%;
     position: absolute;
     top: 440%; 
-    height: 3px; 
+    height: calc(3px + 0.02195 * (100vw - 1366px)); 
     background: linear-gradient(to right, transparent, #004225, transparent); 
-    margin: 20px 0;
+    margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
   }
 
   .mission_text{
@@ -364,20 +350,20 @@
     position: absolute;
     left: 25%; 
     width: 50vw;
-    padding: 20px;
-    font-size: 30px;
+    padding: calc(20px + 0.02195 * (100vw - 1366px));
+    font-size: calc(30px + 0.02195 * (100vw - 1366px));
     line-height: 1.5;
     font-weight: bold;
     font-family: irish grover;
   }
-  
+
   .mission_paragraph {
     position: absolute;
     top: 455%; 
     left: 10%; 
     right: 10%; 
-    padding: 20px;
-    font-size: 20px;
+    padding: calc(20px + 0.02195 * (100vw - 1366px));
+    font-size: calc(20px + 0.02195 * (100vw - 1366px));
     line-height: 1.5;
     font-weight: bold;
     font-family: irish grover;
@@ -387,43 +373,1970 @@
   }
 
   .cv-section {
-    top: 489%;
+    top:calc(492% + 0.02195 * (100vw - 1366px)); /*was 480 */
     width: 100%;
-    height: 300px;
+    height: calc(300px + 0.02195 * (100vw - 1366px));
     font-family: irish grover;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
   }
-  
+
   .cv-content {
     text-align: center;
   }
-  
+
   .cv-content p {
-    /* font-size: 1.5rem; */
-    font-size: 20px;
+    font-size: calc(20px + 0.02195 * (100vw - 1366px));
     line-height: 1.5;
-    font-weight: bold;
     font-family: irish grover;
-    margin-bottom: 20px;
+    margin-bottom: calc(20px + 0.02195 * (100vw - 1366px));
   }
-  
+
   .download-link {
     display: inline-block;
-    padding: 10px 20px;
+    padding: calc(10px + 0.02195 * (100vw - 1366px)) calc(20px + 0.02195 * (100vw - 1366px));
     background-color: #006a4e;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: calc(5px + 0.02195 * (100vw - 1366px));
     transition: background-color 0.3s ease;
   }
-  
+
   .download-link:hover {
     background-color: #004225;
   }
-  
+
   .download-icon {
-    margin-left: 5px;
+    margin-left: calc(5px + 0.02195 * (100vw - 1366px));
   }
+  
+  @media screen and (min-width: 1200px) and (max-width: 1366px) {
+
+      .about-me {
+        position: absolute; 
+        top: 55%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 50vw;
+        height: 55vh;
+        font-weight: bold;
+        font-size: calc(20px + 0.02195  * (100vw - 1366px));
+        text-align: justify;
+        font-family: Lato;
+        
+      }    
+    
+    .portfolio-paragraph {
+      line-height: 1.8; 
+    }
+    
+    .divider {
+        width: 100%;
+        position: absolute;
+        top: 90%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+    
+    .right_t {
+        overflow: auto;
+        scroll-behavior: smooth;
+      }
+    
+    
+      .experience_text {
+        position: absolute;
+        top: 91%; 
+        left: 40%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: calc(30px + 0.02195  * (100vw - 1366px));
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .miss-container {
+        position: absolute; 
+        top: 155%;
+        left: 5%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 70vh;
+        background-image: url('../images/miss_professional.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        z-index: 100; 
+        mix-blend-mode: multiply; 
+        pointer-events: none;
+      }
+      .exp_1 {
+        position: absolute;
+        top: 115%;
+        right: 10%;
+        width: calc(450px + 0.02195  * (100vw - 1366px)); 
+        height: calc(110px + 0.02195  * (100vw - 1366px));
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        
+        line-height: 1;
+      }
+      .exp_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .prof{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .date, .gpa{
+        font-weight: bold;
+        font-size: 11px;
+      }
+      .comp{
+        font-weight: bold;
+        font-size: 13px;
+      }
+    
+      .exp_2 {
+        position: absolute;
+        top: 145%;
+        right: 10%;
+        width: calc(450px + 0.02195  * (100vw - 1366px)); 
+        height: calc(110px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        
+        line-height: 1;
+      }
+      .exp_2:hover {
+        transform: translateY(calc(-18px - 0.02195 * (100vw - 1366px))); 
+      }
+      .comp_l{
+        font-weight: bold;
+        font-size: 13px;
+      
+        color: #004225;
+      }
+    
+      .exp_3 {
+        position: absolute;
+        top: 175%;
+        right: 10%;
+        width: calc(450px + 0.02195  * (100vw - 1366px)); 
+        height: calc(110px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .exp_3:hover {
+        transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
+      }
+    
+    
+      .divider_2 {
+        width: 100%;
+        position: absolute;
+        top: 200%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+      .journey_text {
+        position: absolute;
+        top: 199%; 
+        left: 27%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: calc(30px + 0.02195  * (100vw - 1366px));
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .custom-div {
+        position: absolute;
+        top: calc(220% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        width: 30vw;
+        height: 20vh;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/polaris.png');
+        cursor: pointer;
+      }
+      .custom-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: calc(-9999px + 0.02195  * (100vw - 1366px)); 
+      }
+      
+     
+      .journey{
+        position: absolute;
+        top: calc(218% + 0.02195 * (100vw - 1366px));
+        right: 10%;
+        width: 40vw;
+        height: 25vh;
+        background-color: transparent; 
+        
+        line-height: 1.5;
+        font-size: 15px;
+        font-weight: bold;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+    
+      }
+    
+      .journey_2{
+        position: absolute;
+        top: calc(250% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        right: 10%;
+        line-height: 1.5;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+      }
+    
+      .divider_3 {
+        width: 100%;
+        position: absolute;
+        top: calc(292% + 0.02195 * (100vw - 1366px)); 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: 20px 0;
+      }
+      .education_text{
+      
+        top: calc(293% + 0.02195 * (100vw - 1366px)); 
+        position: absolute;
+        left: 42%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: calc(30px + 0.02195 * (100vw - 1366px));
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .graduating_hat{
+        
+        position: absolute; 
+        top: 332%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 40vh;
+        background-image: url('../images/kk.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
+      
+      .edu_1 {
+        position: absolute;
+        top: 310%;
+        right: 10%;
+        width: calc(450px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .edu_2 {
+        position: absolute;
+        top: 340%;
+        right: 10%;
+        width: calc(450px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_2:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .divider_4 {
+        width: 100%;
+        position: absolute;
+        top: 370%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .skill_text{
+        top: 370%;
+        position: absolute;
+        left: 45%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: calc(30px + 0.02195 * (100vw - 1366px));
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .divider_5 {
+        width: 100%;
+        position: absolute;
+        top: 440%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .mission_text{
+        top: 440%;
+        position: absolute;
+        left: 25%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: calc(30px + 0.02195 * (100vw - 1366px));
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .mission_paragraph {
+        position: absolute;
+        top: 455%; 
+        left: 10%; 
+        right: 10%; 
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: calc(20px + 0.02195 * (100vw - 1366px));
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+        display: inline-block; 
+        text-align: justify;
+        text-justify: inter-word; 
+      }
+    
+      .cv-section {
+        top:calc(492% + 0.02195 * (100vw - 1366px));
+        width: 100%;
+        height: calc(300px + 0.02195 * (100vw - 1366px));
+        font-family: irish grover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+      
+      .cv-content {
+        text-align: center;
+      }
+      
+      .cv-content p {
+        font-size: calc(20px + 0.02195 * (100vw - 1366px));
+        line-height: 1.5;
+        font-family: irish grover;
+        margin-bottom: calc(20px + 0.02195 * (100vw - 1366px));
+      }
+      
+      .download-link {
+        display: inline-block;
+        padding: calc(10px + 0.02195 * (100vw - 1366px)) calc(20px + 0.02195 * (100vw - 1366px));
+        background-color: #006a4e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .download-link:hover {
+        background-color: #004225;
+      }
+      
+      .download-icon {
+        margin-left: calc(5px + 0.02195 * (100vw - 1366px));
+      }
+
+  }       
+  @media screen and (min-width: 999px) and (max-width: 1199px) {
+    
+    .about-me {
+      position: absolute; 
+      top: 55%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      width: 50vw;
+      height: 55vh;
+      font-weight: bold;
+      font-size: calc(20px + 0.02195  * (100vw - 1366px));
+      text-align: justify;
+      font-family: Lato;
+      
+    }    
+  
+  .portfolio-paragraph {
+    line-height: 1.8; 
+  }
+  
+  .divider {
+      width: 100%;
+      position: absolute;
+      top: 90%; 
+      height: 3px; 
+      background: linear-gradient(to right, transparent, #004225, transparent); 
+      
+      margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+    }
+  
+  
+  .right_t {
+      overflow: auto;
+      scroll-behavior: smooth;
+    }
+  
+  
+    .experience_text {
+      position: absolute;
+      top: 91%; 
+      left: 40%; 
+      width: 50vw;
+      padding: calc(20px + 0.02195  * (100vw - 1366px));
+      font-size: calc(30px + 0.02195  * (100vw - 1366px));
+      line-height: 1.5;
+      font-weight: bold;
+      font-family: irish grover;
+    }
+  
+    .miss-container {
+      position: absolute; 
+      top: 155%;
+      left: 5%;
+      transform: translateY(-50%);
+      width: 30vw;
+      height: 70vh;
+      background-image: url('../images/miss_professional.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+      z-index: 100; 
+      mix-blend-mode: multiply; 
+      pointer-events: none;
+    }
+    .exp_1 {
+      position: absolute;
+      top: 115%;
+      right: 10%;
+      width: calc(450px + 0.02195  * (100vw - 1366px)); 
+      height: calc(110px + 0.02195  * (100vw - 1366px));
+      background-color: #e9ffdb   ;
+      border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+      padding: calc(10px + 0.02195  * (100vw - 1366px));
+      text-align: center;
+      
+      line-height: 1;
+    }
+    .exp_1:hover {
+      transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+    }
+  
+    .prof{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .date, .gpa{
+      font-weight: bold;
+      font-size: 11px;
+    }
+    .comp{
+      font-weight: bold;
+      font-size: 13px;
+    }
+  
+    .exp_2 {
+      position: absolute;
+      top: 145%;
+      right: 10%;
+      width: calc(450px + 0.02195  * (100vw - 1366px)); 
+      height: calc(110px + 0.02195  * (100vw - 1366px)); 
+      background-color: #e9ffdb   ;
+      border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+      padding: calc(10px + 0.02195  * (100vw - 1366px));
+      text-align: center;
+      
+      line-height: 1;
+    }
+    .exp_2:hover {
+      transform: translateY(calc(-18px - 0.02195 * (100vw - 1366px))); 
+    }
+    .comp_l{
+      font-weight: bold;
+      font-size: 13px;
+    
+      color: #004225;
+    }
+  
+    .exp_3 {
+      position: absolute;
+      top: 175%;
+      right: 10%;
+      width: calc(450px + 0.02195  * (100vw - 1366px)); 
+      height: calc(110px + 0.02195  * (100vw - 1366px)); 
+      background-color: #e9ffdb   ;
+      border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+      padding: calc(10px + 0.02195  * (100vw - 1366px));
+      text-align: center;
+      line-height: 1;
+    }
+  
+    .exp_3:hover {
+      transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
+    }
+  
+  
+    .divider_2 {
+      width: 100%;
+      position: absolute;
+      top: 200%; 
+      height: 3px; 
+      background: linear-gradient(to right, transparent, #004225, transparent); 
+      margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+    }
+  
+    .journey_text {
+      position: absolute;
+      top: 199%; 
+      left: 27%; 
+      width: 50vw;
+      padding: calc(20px + 0.02195  * (100vw - 1366px));
+      font-size: calc(30px + 0.02195  * (100vw - 1366px));
+      line-height: 1.5;
+      font-weight: bold;
+      font-family: irish grover;
+    }
+  
+    .custom-div {
+      position: absolute;
+      top: calc(220% + 0.02195 * (100vw - 1366px));
+      left: 10%;
+      width: 30vw;
+      height: 20vh;
+      background-color: transparent; 
+      
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../images/polaris.png');
+      cursor: pointer;
+    }
+    .custom-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-indent: calc(-9999px + 0.02195  * (100vw - 1366px));
+    }
+    
+   
+    .journey{
+      position: absolute;
+      top: calc(218% + 0.02195 * (100vw - 1366px));
+      right: 10%;
+      width: 40vw;
+      height: 25vh;
+      background-color: transparent; 
+      
+      line-height: 1.5;
+      font-size: 13px;
+      font-weight: bold;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: Lato;
+      text-align: justify;
+  
+    }
+  
+    .journey_2{
+      position: absolute;
+      top: calc(250% + 0.02195 * (100vw - 1366px));
+      left: 10%;
+      right: 10%;
+      line-height: 1.5;
+      font-size: 13px;
+      font-weight: bold;
+      background-color: transparent; 
+      
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: Lato;
+      text-align: justify;
+    }
+  
+    .divider_3 {
+      width: 100%;
+      position: absolute;
+      top: calc(292% + 0.02195 * (100vw - 1366px)); 
+      height: 3px; 
+      background: linear-gradient(to right, transparent, #004225, transparent); 
+      margin: 20px 0;
+    }
+    
+    
+    .education_text{
+      top: calc(293% + 0.02195 * (100vw - 1366px));
+      position: absolute;
+      left: 42%; 
+      width: 50vw;
+      padding: calc(20px + 0.02195 * (100vw - 1366px));
+      font-size: calc(30px + 0.02195 * (100vw - 1366px));
+      line-height: 1.5;
+      font-weight: bold;
+      font-family: irish grover;
+    }
+    
+    .graduating_hat{
+      
+      position: absolute; 
+      top: 332%;
+      left: 10%;
+      transform: translateY(-50%);
+      width: 30vw;
+      height: 40vh;
+      background-image: url('../images/kk.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    
+    .edu_1 {
+      position: absolute;
+      top: 310%;
+      right: 10%;
+      width: calc(450px + 0.02195 * (100vw - 1366px)); 
+      height: calc(120px + 0.02195 * (100vw - 1366px)); 
+      background-color: #e9ffdb;
+      border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+      padding: calc(10px + 0.02195 * (100vw - 1366px));
+      text-align: center;
+      line-height: 1;
+    }
+  
+    .edu_1:hover {
+      transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+    }
+  
+    .edu_2 {
+      position: absolute;
+      top: 340%;
+      right: 10%;
+      width: calc(450px + 0.02195 * (100vw - 1366px)); 
+      height: calc(120px + 0.02195 * (100vw - 1366px)); 
+      background-color: #e9ffdb   ;
+      border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+      padding: calc(10px + 0.02195 * (100vw - 1366px));
+      text-align: center;
+      line-height: 1;
+    }
+  
+    .edu_2:hover {
+      transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+    }
+  
+    .divider_4 {
+      width: 100%;
+      position: absolute;
+      top: 370%; 
+      height: 3px; 
+      background: linear-gradient(to right, transparent, #004225, transparent); 
+      margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+    }
+  
+    .skill_text{
+      top: 370%;
+      position: absolute;
+      left: 45%; 
+      width: 50vw;
+      padding: calc(20px + 0.02195 * (100vw - 1366px));
+      font-size: calc(30px + 0.02195 * (100vw - 1366px));
+      line-height: 1.5;
+      font-weight: bold;
+      font-family: irish grover;
+    }
+  
+    .divider_5 {
+      width: 100%;
+      position: absolute;
+      top: 440%; 
+      height: 3px; 
+      background: linear-gradient(to right, transparent, #004225, transparent); 
+      margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+    }
+  
+    .mission_text{
+      top: 440%;
+      position: absolute;
+      left: 25%; 
+      width: 50vw;
+      padding: calc(20px + 0.02195 * (100vw - 1366px));
+      font-size: calc(30px + 0.02195 * (100vw - 1366px));
+      line-height: 1.5;
+      font-weight: bold;
+      font-family: irish grover;
+    }
+    
+    .mission_paragraph {
+      position: absolute;
+      top: 455%; 
+      left: 10%; 
+      right: 10%; 
+      padding: calc(20px + 0.02195 * (100vw - 1366px));
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: bold;
+      font-family: irish grover;
+      display: inline-block; 
+      text-align: justify;
+      text-justify: inter-word; 
+    }
+  
+    .cv-section {
+      top:calc(492% + 0.02195 * (100vw - 1366px)); 
+      width: 100%;
+      height: calc(300px + 0.02195 * (100vw - 1366px));
+      font-family: irish grover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
+    
+    .cv-content {
+      text-align: center;
+    }
+    
+    .cv-content p {
+      font-size: 13px;
+      line-height: 1.5;
+      font-family: irish grover;
+      margin-bottom: 13px;
+    }
+    
+    .download-link {
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #006a4e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .download-link:hover {
+      background-color: #004225;
+    }
+    
+    .download-icon {
+      margin-left: 5px;
+    }
+
+      } 
+
+
+    @media screen and (min-width: 799px) and (max-width: 999px) {
+  
+      .about-me {
+        position: absolute; 
+        top: 55%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 50vw;
+        height: 55vh;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: justify;
+        font-family: Lato;
+        
+      }    
+    
+    .portfolio-paragraph {
+      line-height: 1.8; 
+    }
+    
+    .divider {
+        width: 100%;
+        position: absolute;
+        top: 90%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+    
+    .right_t {
+        overflow: auto;
+        scroll-behavior: smooth;
+      }
+    
+    
+      .experience_text {
+        position: absolute;
+        top: 91%; 
+        left: 40%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .miss-container {
+        position: absolute; 
+        top: 155%;
+        left: 5%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 70vh;
+        background-image: url('../images/miss_professional.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        z-index: 100; 
+        mix-blend-mode: multiply; 
+        pointer-events: none;
+      }
+      .exp_1 {
+        position: absolute;
+        top: 115%;
+        right: 10%;
+        width: calc(370px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px));
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        
+        line-height: 1;
+      }
+      .exp_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .prof{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .date, .gpa{
+        font-weight: bold;
+        font-size: 9.7px;
+      }
+      .comp{
+        font-weight: bold;
+        font-size: 11.5px;
+      }
+    
+      .exp_2 {
+        position: absolute;
+        top: 145%;
+        right: 10%;
+        width: calc(370px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+      .exp_2:hover {
+        transform: translateY(calc(-18px - 0.02195 * (100vw - 1366px))); 
+      }
+      .comp_l{
+        font-weight: bold;
+        font-size: 11.5 px;
+      
+        color: #004225;
+      }
+    
+      .exp_3 {
+        position: absolute;
+        top: 175%;
+        right: 10%;
+        width: calc(370px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .exp_3:hover {
+        transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
+      }
+    
+    
+      .divider_2 {
+        width: 100%;
+        position: absolute;
+        top: 200%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+      .journey_text {
+        position: absolute;
+        top: 199%; 
+        left: 27%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .custom-div {
+        position: absolute;
+        top: calc(220% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        width: 30vw;
+        height: 20vh;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/polaris.png');
+        cursor: pointer;
+      }
+      .custom-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: calc(-9999px + 0.02195  * (100vw - 1366px)); 
+      }
+      
+      
+      .journey{
+        position: absolute;
+        top: calc(218% + 0.02195 * (100vw - 1366px));
+        right: 10%;
+        width: 40vw;
+        height: 25vh;
+        background-color: transparent; 
+        
+        line-height: 1.5;
+        font-size: 11.5px;
+        font-weight: bold;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+    
+      }
+    
+      .journey_2{
+        position: absolute;
+        top: calc(250% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        right: 10%;
+        line-height: 1.5;
+        font-size: 11.5px;
+        font-weight: bold;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+      }
+    
+      .divider_3 {
+        width: 100%;
+        position: absolute;
+        top: calc(292% + 0.02195 * (100vw - 1366px)); 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: 20px 0;
+      }
+      
+      
+      .education_text{
+        top: calc(293% + 0.02195 * (100vw - 1366px)); 
+        position: absolute;
+        left: 42%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .graduating_hat{
+        
+        position: absolute; 
+        top: 332%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 40vh;
+        background-image: url('../images/kk.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
+      
+      .edu_1 {
+        position: absolute;
+        top: 310%;
+        right: 10%;
+        width: calc(370px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .edu_2 {
+        position: absolute;
+        top: 340%;
+        right: 10%;
+        width: calc(370px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_2:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .divider_4 {
+        width: 100%;
+        position: absolute;
+        top: 370%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .skill_text{
+        top: 370%;
+        position: absolute;
+        left: 45%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+  
+      .divider_5 {
+        width: 100%;
+        position: absolute;
+        top: 440%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .mission_text{
+        top: 440%;
+        position: absolute;
+        left: 25%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .mission_paragraph {
+        position: absolute;
+        top: 455%; 
+        left: 10%; 
+        right: 10%; 
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 11.5px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+        display: inline-block; 
+        text-align: justify;
+        text-justify: inter-word; 
+      }
+    
+      .cv-section {
+        top:calc(492% + 0.02195 * (100vw - 1366px)); 
+        width: 100%;
+        height: calc(300px + 0.02195 * (100vw - 1366px));
+        font-family: irish grover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+      
+      .cv-content {
+        text-align: center;
+      }
+      
+      .cv-content p {
+        font-size: 11.5px;
+        line-height: 1.5;
+        font-family: irish grover;
+        margin-bottom: 13px;
+      }
+      
+      .download-link {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: #006a4e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .download-link:hover {
+        background-color: #004225;
+      }
+      
+      .download-icon {
+        margin-left: 5px;
+      }
+  
+        }
+
+
+    @media screen and (min-width: 599px) and (max-width: 798px) {
+
+      .about-me {
+        position: absolute; 
+        top: 55%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 50vw;
+        height: 55vh;
+        font-weight: bold;
+        font-size: 10px;
+        text-align: justify;
+        font-family: Lato;
+        
+      }    
+    
+    .portfolio-paragraph {
+      line-height: 1.8; 
+    }
+    
+    .divider {
+        width: 100%;
+        position: absolute;
+        top: 90%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+    
+    .right_t {
+        overflow: auto;
+        scroll-behavior: smooth;
+      }
+    
+    
+      .experience_text {
+        position: absolute;
+        top: 91%; 
+        left: 40%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .miss-container {
+        position: absolute; 
+        top: 155%;
+        left: 5%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 70vh;
+        background-image: url('../images/miss_professional.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        z-index: 100; 
+        mix-blend-mode: multiply; 
+        pointer-events: none;
+      }
+      .exp_1 {
+        position: absolute;
+        top: 115%;
+        right: 10%;
+        width: calc(270px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px));
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        
+        line-height: 1;
+      }
+      .exp_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .prof{
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .date, .gpa{
+        font-weight: bold;
+        font-size: 8.5px;
+      }
+      .comp{
+        font-weight: bold;
+        font-size: 10.1px;
+      }
+    
+      .exp_2 {
+        position: absolute;
+        top: 145%;
+        right: 10%;
+        width: calc(270px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+      .exp_2:hover {
+        transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
+      }
+      .comp_l{
+        font-weight: bold;
+        font-size: 10.1px;
+      
+        color: #004225;
+      }
+    
+      .exp_3 {
+        position: absolute;
+        top: 175%;
+        right: 10%;
+        width: calc(270px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .exp_3:hover {
+        transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
+      }
+    
+    
+      .divider_2 {
+        width: 100%;
+        position: absolute;
+        top: 200%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+      .journey_text {
+        position: absolute;
+        top: 199%; 
+        left: 24%; 
+        width: 60vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .custom-div {
+        position: absolute;
+        top: calc(220% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        width: 30vw;
+        height: 20vh;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/polaris.png');
+        cursor: pointer;
+      }
+      .custom-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: calc(-9999px + 0.02195  * (100vw - 1366px)); 
+      }
+      
+      
+      .journey{
+        position: absolute;
+        top: calc(218% + 0.02195 * (100vw - 1366px));
+        right: 10%;
+        width: 40vw;
+        height: 25vh;
+        background-color: transparent; 
+        
+        line-height: 1.5;
+        font-size: 10.1px;
+        font-weight: bold;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+    
+      }
+    
+      .journey_2{
+        position: absolute;
+        top: calc(250% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        right: 10%;
+        line-height: 1.5;
+        font-size: 10.1px;
+        font-weight: bold;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+      }
+    
+      .divider_3 {
+        width: 100%;
+        position: absolute;
+        top: calc(292% + 0.02195 * (100vw - 1366px)); 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: 20px 0;
+      }
+      
+      
+      .education_text{
+        top: calc(293% + 0.02195 * (100vw - 1366px));
+        position: absolute;
+        left: 42%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .graduating_hat{
+        
+        position: absolute; 
+        top: 332%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 40vh;
+        background-image: url('../images/kk.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
+      
+      .edu_1 {
+        position: absolute;
+        top: 310%;
+        right: 10%;
+        width: calc(270px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .edu_2 {
+        position: absolute;
+        top: 340%;
+        right: 10%;
+        width: calc(270px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_2:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .divider_4 {
+        width: 100%;
+        position: absolute;
+        top: 370%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .skill_text{
+        top: 370%;
+        position: absolute;
+        left: 45%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+  
+      .divider_5 {
+        width: 100%;
+        position: absolute;
+        top: 440%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .mission_text{
+        top: 440%;
+        position: absolute;
+        left: 20%; 
+        width: 60vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .mission_paragraph {
+        position: absolute;
+        top: 455%; 
+        left: 10%; 
+        right: 10%; 
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 10.1px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+        display: inline-block; 
+        text-align: justify;
+        text-justify: inter-word; 
+      }
+    
+      .cv-section {
+        top:calc(492% + 0.02195 * (100vw - 1366px));
+        width: 100%;
+        height: calc(300px + 0.02195 * (100vw - 1366px));
+        font-family: irish grover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+      
+      .cv-content {
+        text-align: center;
+      }
+      
+      .cv-content p {
+        font-size: 11.5px;
+        line-height: 1.5;
+        font-family: irish grover;
+        margin-bottom: 13px;
+      }
+      
+      .download-link {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: #006a4e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .download-link:hover {
+        background-color: #004225;
+      }
+      .download-label{
+        font-size: 11.5px;
+      }
+      .download-icon {
+        margin-left: 5px;
+      }
+  
+        }
+
+      
+    @media screen and (min-width: 299px) and (max-width: 598px) {
+
+      .about-me {
+        position: absolute; 
+        top: 55%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 50vw;
+        height: 55vh;
+        font-weight: bold;
+        font-size: 9px;
+        text-align: justify;
+        font-family: Lato;
+        
+      }    
+    
+    .portfolio-paragraph {
+      line-height: 1.8; 
+    }
+    
+    .divider {
+        width: 100%;
+        position: absolute;
+        top: 90%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+    
+    .right_t {
+        overflow: auto;
+        scroll-behavior: smooth;
+      }
+    
+    
+      .experience_text {
+        position: absolute;
+        top: 91%; 
+        left: 40%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .miss-container {
+        position: absolute; 
+        top: 155%;
+        left: 5%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 70vh;
+        background-image: url('../images/miss_professional.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        z-index: 100; 
+        mix-blend-mode: multiply; 
+        pointer-events: none;
+      }
+      .exp_1 {
+        position: absolute;
+        top: 115%;
+        right: 5%;
+        width: calc(170px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px));
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        
+        line-height: 1;
+      }
+      .exp_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .prof{
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .date, .gpa{
+        font-weight: bold;
+        font-size: 7.2px;
+      }
+      .comp{
+        font-weight: bold;
+        font-size: 8.6px;
+      }
+    
+      .exp_2 {
+        position: absolute;
+        top: 145%;
+        right: 5%;
+        width: calc(170px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+      .exp_2:hover {
+        transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
+      }
+      .comp_l{
+        font-weight: bold;
+        font-size: 8.6px;
+      
+        color: #004225;
+      }
+    
+      .exp_3 {
+        position: absolute;
+        top: 175%;
+        right: 5%;
+        width: calc(170px + 0.02195  * (100vw - 1366px)); 
+        height: calc(100px + 0.02195  * (100vw - 1366px)); 
+        background-color: #e9ffdb;
+        border-radius: calc(20px + 0.02195  * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195  * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .exp_3:hover {
+        transform: translateY(calc(-18px + 0.02195  * (100vw - 1366px))); 
+      }
+    
+    
+      .divider_2 {
+        width: 100%;
+        position: absolute;
+        top: 200%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195  * (100vw - 1366px)) 0;
+      }
+    
+      .journey_text {
+        position: absolute;
+        top: 199%; 
+        left: 17%; 
+        width: 70vw;
+        padding: calc(20px + 0.02195  * (100vw - 1366px));
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+    
+      .custom-div {
+        position: absolute;
+        top: calc(220% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        width: 30vw;
+        height: 20vh;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/polaris.png');
+        cursor: pointer;
+      }
+      .custom-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: calc(-9999px + 0.02195  * (100vw - 1366px)); 
+      }
+      
+      
+      .journey{
+        position: absolute;
+        top: calc(218% + 0.02195 * (100vw - 1366px));
+        right: 10%;
+        width: 40vw;
+        height: 25vh;
+        background-color: transparent; 
+        
+        line-height: 1.5;
+        font-size: 8.6px;
+        font-weight: bold;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+    
+      }
+    
+      .journey_2{
+        position: absolute;
+        top: calc(250% + 0.02195 * (100vw - 1366px));
+        left: 10%;
+        right: 10%;
+        line-height: 1.5;
+        font-size: 8.6px;
+        font-weight: bold;
+        background-color: transparent; 
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Lato;
+        text-align: justify;
+      }
+    
+      .divider_3 {
+        width: 100%;
+        position: absolute;
+        top: calc(292% + 0.02195 * (100vw - 1366px)); 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: 20px 0;
+      }
+      
+      
+      .education_text{
+        top: calc(295% + 0.02195 * (100vw - 1366px)); 
+        position: absolute;
+        left: 42%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .graduating_hat{
+        
+        position: absolute; 
+        top: 332%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 30vw;
+        height: 40vh;
+        background-image: url('../images/kk.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
+      
+      .edu_1 {
+        position: absolute;
+        top: 310%;
+        right: 5%;
+        width: calc(170px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_1:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .edu_2 {
+        position: absolute;
+        top: 340%;
+        right: 5%;
+        width: calc(170px + 0.02195 * (100vw - 1366px)); 
+        height: calc(120px + 0.02195 * (100vw - 1366px)); 
+        background-color: #e9ffdb   ;
+        border-radius: calc(20px + 0.02195 * (100vw - 1366px)); 
+        padding: calc(10px + 0.02195 * (100vw - 1366px));
+        text-align: center;
+        line-height: 1;
+      }
+    
+      .edu_2:hover {
+        transform: translateY(calc(-18px + 0.02195 * (100vw - 1366px))); 
+      }
+    
+      .divider_4 {
+        width: 100%;
+        position: absolute;
+        top: 370%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .skill_text{
+        top: 370%;
+        position: absolute;
+        left: 45%; 
+        width: 50vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+  
+      .divider_5 {
+        width: 100%;
+        position: absolute;
+        top: 440%; 
+        height: 3px; 
+        background: linear-gradient(to right, transparent, #004225, transparent); 
+        margin: calc(20px + 0.02195 * (100vw - 1366px)) 0;
+      }
+    
+      .mission_text{
+        top: 440%;
+        position: absolute;
+        left: 15%; 
+        width: 70vw;
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+      }
+      
+      .mission_paragraph {
+        position: absolute;
+        top: 455%; 
+        left: 10%; 
+        right: 10%; 
+        padding: calc(20px + 0.02195 * (100vw - 1366px));
+        font-size: 8.6px;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: irish grover;
+        display: inline-block; 
+        text-align: justify;
+        text-justify: inter-word; 
+      }
+    
+      .cv-section {
+        top:calc(492% + 0.02195 * (100vw - 1366px)); /*was 480 */
+        width: 100%;
+        height: calc(300px + 0.02195 * (100vw - 1366px));
+        font-family: irish grover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+      
+      .cv-content {
+        text-align: center;
+      }
+      
+      .cv-content p {
+        font-size: 11.5px;
+        line-height: 1.5;
+        font-family: irish grover;
+        margin-bottom: 13px;
+      }
+      
+      .download-link {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: #006a4e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .download-link:hover {
+        background-color: #004225;
+      }
+      .download-label{
+        font-size: 11.5px;
+      }
+      .download-icon {
+        margin-left: 5px;
+      }
+  
+        }

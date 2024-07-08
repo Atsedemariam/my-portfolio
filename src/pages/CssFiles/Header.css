@@ -2,22 +2,12 @@
 
 .container {
     position: relative;
-    width: 100vw; /* take up 100% of the viewport width */
-    height: 100vh; /* take up 100% of the viewport height */
+    width: 100vw; 
+    height: 100vh; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: #f0ffff;
-}
-
-.name_text{
-  position: fixed;
-  top: 0;
-  left: 100px;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Ingrid Darling', cursive; 
-  background-color: transparent;
 }
 
 .header_div {
@@ -37,11 +27,50 @@
   height: 100px;
   flex:none;
 }
-
 .buttons-container {
   display: flex;
 }
-  
+.name_text{
+  display: block; 
+  position: fixed;
+  top: 0;
+  left: calc(100px + 0.02195  * (100vw - 1366px));
+  font-size: calc(30px + 0.02195  * (100vw - 1366px));
+  font-weight: bold;
+  font-family: 'Ingrid Darling', cursive; 
+  background-color: transparent;
+}
+.button {
+  margin-right: calc(10px + 0.02195  * (100vw - 1366px));
+  background-color: transparent;
+  color: #004225; 
+  font-size: calc(16px + 0.02195  * (100vw - 1366px)); 
+  font-weight: bold;
+  border: none;
+  margin-right: calc(50px + 0.02195  * (100vw - 1366px));
+  padding: calc(10px + 0.02195 * (100vw - 1366px)) calc(10px + 0.02195 * (100vw - 1366px));
+  border-radius: calc(5px + 0.02195  * (100vw - 1366px)); 
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+.button:hover {
+  background-color: #004225;
+  color: white; 
+  transform: translateY(-(calc(8px + 0.02195  * (100vw - 1366px)))); 
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+.name_text{
+  display: block; 
+  position: fixed;
+  top: 0;
+  left: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Ingrid Darling', cursive; 
+  background-color: transparent;
+}
+
 .button {
   margin-right: 10px;
   background-color: transparent;
@@ -55,9 +84,215 @@
   cursor: pointer;
   transition: transform 0.3s ease; 
 }
-
 .button:hover {
   background-color: #004225;
   color: white; 
-  transform: translateY(-8px); 
+  transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
 }
+
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .name_text{
+    display: block; 
+    position: fixed;
+    top: 0;
+    left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Ingrid Darling', cursive; 
+    background-color: transparent;
+  }
+  
+  .button {
+    margin-right: 10px;
+    background-color: transparent;
+    color: #004225; 
+    font-size: 16px; 
+    font-weight: bold;
+    border: none;
+    margin-right: 50px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  }
+  .button:hover {
+    background-color: #004225;
+    color: white; 
+    transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+  }
+  .header_div {
+    background-color: rgba(240, 255, 255, 0.93); 
+    z-index: 100;
+    top: 0;
+    height: 60px;
+    position: fixed; 
+  }
+  
+  }
+
+  
+@media screen and (min-width: 700px) and (max-width: 899px) {
+  .name_text{
+    display: block; 
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ingrid Darling', cursive; 
+    background-color: transparent;
+  }
+  
+  .button {
+    margin-right: 10px;
+    background-color: transparent;
+    color: #004225; 
+    font-size: 12px; 
+    font-weight: bold;
+    border: none;
+    margin-right: 50px;
+    padding: 6px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  }
+  .button:hover {
+    background-color: #004225;
+    color: white; 
+    transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+  }
+  .header_div {
+    background-color: rgba(240, 255, 255, 0.93); 
+    z-index: 100;
+    top: 0;
+    height: 60px;
+    position: fixed; 
+  }
+  
+  }
+
+    
+@media screen and (min-width: 650px) and (max-width: 699px) {
+  .name_text{
+    display: block; 
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ingrid Darling', cursive; 
+    background-color: transparent;
+  }
+  
+  .button {
+    margin-right: 10px;
+    background-color: transparent;
+    color: #004225; 
+    font-size: 12px; 
+    font-weight: bold;
+    border: none;
+    margin-right: 50px;
+    padding: 6px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  }
+  .button:hover {
+    background-color: #004225;
+    color: white; 
+    transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+  }
+  .header_div {
+    background-color: rgba(240, 255, 255, 0.93); 
+    z-index: 100;
+    top: 0;
+    height: 60px;
+    position: fixed; 
+  }
+  
+  }
+
+  @media screen and (min-width: 550px) and (max-width: 649px) {
+    .name_text{
+      display: none; 
+      position: fixed;
+      top: 25px;
+      left: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Ingrid Darling', cursive; 
+      background-color: transparent;
+    }
+    
+    .button {
+      margin-right: 10px;
+      background-color: transparent;
+      color: #004225; 
+      font-size: 12px; 
+      font-weight: bold;
+      border: none;
+      margin-right: 50px;
+      padding: 2px 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease; 
+    }
+    .button:hover {
+      background-color: #004225;
+      color: white; 
+      transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+    }     
+    .header_div {
+      background-color: rgba(240, 255, 255, 0.93); 
+      z-index: 100;
+      top: 0;
+      height: 60px;
+      position: fixed; 
+    }
+    }
+
+    @media screen and (min-width: 350px) and (max-width: 550px) {
+      .name_text{
+        display: none; 
+        position: fixed;
+        top: 25px;
+        left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ingrid Darling', cursive; 
+        background-color: transparent;
+      }
+      
+      .button {
+        margin-right: 10px;
+        background-color: transparent;
+        color: #004225; 
+        font-size: 12px; 
+        font-weight: bold;
+        border: none;
+        margin-right: 50px;
+        padding: 0px 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+      }
+      .button:hover {
+        background-color: #004225;
+        color: white; 
+        transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+      }
+      .header_div {
+        background-color: rgba(240, 255, 255, 0.93); 
+        z-index: 100;
+        top: 0;
+        height: 60px;
+        position: fixed; 
+      }
+      .header{
+        padding: 10px;;
+      }
+
+    }
