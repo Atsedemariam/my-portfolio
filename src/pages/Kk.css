@@ -1,0 +1,52 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 50px; /* Space for the timeline line */
+    top: 60%;
+    left: 50%;
+  }
+  
+  .timeline-item {
+    display: flex;
+    margin-bottom: 40px; /* Adjust spacing between timeline items */
+  }
+  
+  .timeline-item-date {
+    width: 100px; /* Adjust based on your date width */
+    font-weight: bold;
+    text-align: right; /* Align date text to the right */
+    position: sticky;
+    left: -100px;
+  }
+  
+  .timeline-item-content {
+    margin-left: 20px; /* Space between the date and content */
+    padding-left: 20px; /* Space for the timeline line */
+    border-left: 2px solid green; /* Your preferred color for the timeline line */
+  }
+  
+  .timeline-item-content h3 {
+    margin-top: 0;
+  }
+  
+  .timeline-item-content p {
+    margin-bottom: 10px;
+  }
+
+  
+
+  .sketch-image {
+    position: absolute;
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    left: 5%;
+    top: 10%;
+    background-size: contain;
+    background-image: url('./CssFiles/kkkk.png');
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image within the div */
+    filter: contrast(1%) grayscale(100%) brightness(100%);
+    /* outline: 1px solid black;  */
+    outline-offset: -1px; /* Adjust outline offset for better appearance */
+  }

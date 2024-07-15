@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import "./CssFiles/LanguageToggler.css"; // Import CSS file for button styling
-import AmImage from './images/icons8-lan-am-50.png'
-import EnImage from './images/icons8-lan-en-50.png'
+import AmImage from './images/ha.png'
+import EnImage from './images/language.png'
   import { ThemeContext } from "./themeContext";
 const LanguageToggle = () => {
   const { toggleLanguage, language } = useLanguage(); // Destructure toggleLanguage and language

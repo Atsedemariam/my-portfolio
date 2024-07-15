@@ -38,6 +38,7 @@
       background-size: cover; 
       animation: rotate 5s linear infinite;
       }
+      
     .profile {
       position: absolute;
       top: 50%;
@@ -54,9 +55,6 @@
       .text{
       font-size: calc(20px + 0.02195  * (100vw - 1366px));
       }
-
-
-
 
     .wave {
     box-shadow:
@@ -823,19 +821,19 @@
         }
 
                 
-      @media screen  and (min-width: 300px) and (max-width:450px) {
+      @media screen  and (min-width: 400px) and (max-width:450px) {
         .circle-container {
           position: relative;
           
-          left: 10%;
+          left: 1%;
           display: flex;
           justify-content: center; 
           align-items: center; 
           } 
           
           .circle-image {
-          width: 200px; 
-          height: 200px; 
+          width: 180px; 
+          height: 180px; 
           border-radius: 50%; 
           background-image: url('../images/R.jpeg'); 
           background-size: cover; 
@@ -861,6 +859,401 @@
           box-shadow:
               -50px -50px 0 -40px var(--red),
               50px 50px 0 -40px var(--red);
+          }
+            
+            
+          .wave {
+            float: left;
+            margin: 20px;
+            animation: wave  ease-in-out 0.5s infinite alternate;
+            transform-origin: center -36px;
+          }
+          
+          .wave:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+          }
+          
+          .wave img {
+            border: 5px solid #f8f8f8;
+            display: block;
+            width: 200px;
+            height: 250px;
+          }
+          
+          .wave figcaption {
+            text-align: center;
+          }
+          
+          .wave:after{
+            content: '';
+            position: absolute;
+            width: 18px; 
+            height: 12px;
+            border: 2px solid gray;
+            top: -17px; 
+            left: 50%;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(35deg);
+          }
+                  
+          .wave:before{
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 49%;
+            display: block;
+            height: 44px;
+            width: 47px;
+            background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            z-index: 16;
+          }
+                  
+          @keyframes wave {
+            0% { transform: rotate(0.5deg); }
+            100% { transform: rotate(-0.5deg); }
+          }
+        }
+
+
+                 
+      @media screen  and (min-width: 300px) and (max-width:399px) {
+        .circle-container {
+          position: relative;
+          
+          left: 10%;
+          display: flex;
+          justify-content: center; 
+          align-items: center; 
+          } 
+          
+          .circle-image {
+          width: 200px; 
+          height: 200px; 
+          border-radius: 50%; 
+          background-image: url('../images/R.jpeg'); 
+          background-size: cover; 
+          animation: rotate 5s linear infinite;
+          }
+        .profile {
+        position: absolute;
+        top: 85%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 200px; 
+        padding: 15px;
+        }
+        .salutation{
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Inconsolata;
+        }
+        .text{
+        font-size: 16px;
+        }
+        .wave {
+          box-shadow:
+              -50px -50px 0 -40px var(--red),
+              50px 50px 0 -40px var(--red);
+          }
+            
+            
+          .wave {
+            float: left;
+            margin: 20px;
+            animation: wave  ease-in-out 0.5s infinite alternate;
+            transform-origin: center -36px;
+          }
+          
+          .wave:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+          }
+          
+          .wave img {
+            border: 5px solid #f8f8f8;
+            display: block;
+            width: 200px;
+            height: 250px;
+          }
+          
+          .wave figcaption {
+            text-align: center;
+          }
+          
+          .wave:after{
+            content: '';
+            position: absolute;
+            width: 18px; 
+            height: 12px;
+            border: 2px solid gray;
+            top: -17px; 
+            left: 50%;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(35deg);
+          }
+                  
+          .wave:before{
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 49%;
+            display: block;
+            height: 44px;
+            width: 47px;
+            background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            z-index: 16;
+          }
+                  
+          @keyframes wave {
+            0% { transform: rotate(0.5deg); }
+            100% { transform: rotate(-0.5deg); }
+          }
+        }
+
+
+                  
+      @media screen  and (min-width: 200px) and (max-width:299px) {
+        .circle-container {
+          position: relative;
+          
+          left: 5%;
+          display: flex;
+          justify-content: center; 
+          align-items: center; 
+          } 
+          
+          .circle-image {
+          width: 150px; 
+          height: 150px; 
+          border-radius: 50%; 
+          background-image: url('../images/R.jpeg'); 
+          background-size: cover; 
+          animation: rotate 5s linear infinite;
+          }
+        .profile {
+        position: absolute;
+        top: 85%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 150px; 
+        padding: 15px;
+        }
+        .salutation{
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Inconsolata;
+        }
+        .text{
+        font-size: 14px;
+        }
+        .wave {
+          box-shadow:
+              -5px -5px 0 -0px var(--red),
+              5px 5px 0 -3px var(--red);
+          }
+            
+            
+          .wave {
+            float: left;
+            margin: 20px;
+            animation: wave  ease-in-out 0.5s infinite alternate;
+            transform-origin: center -36px;
+          }
+          
+          .wave:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+          }
+          
+          .wave img {
+            border: 5px solid #f8f8f8;
+            display: block;
+            width: 200px;
+            height: 250px;
+          }
+          
+          .wave figcaption {
+            text-align: center;
+          }
+          
+          .wave:after{
+            content: '';
+            position: absolute;
+            width: 18px; 
+            height: 12px;
+            border: 2px solid gray;
+            top: -17px; 
+            left: 50%;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(35deg);
+          }
+                  
+          .wave:before{
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 49%;
+            display: block;
+            height: 44px;
+            width: 47px;
+            background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            z-index: 16;
+          }
+                  
+          @keyframes wave {
+            0% { transform: rotate(0.5deg); }
+            100% { transform: rotate(-0.5deg); }
+          }
+        }
+
+
+
+                  
+      @media screen  and (min-width: 100px) and (max-width:199px) {
+        .circle-container {
+          position: relative;
+          
+          left: 5%;
+          display: flex;
+          justify-content: center; 
+          align-items: center; 
+          } 
+          
+          .circle-image {
+          width: 80px; 
+          height: 80px; 
+          border-radius: 50%; 
+          background-image: url('../images/R.jpeg'); 
+          background-size: cover; 
+          animation: rotate 5s linear infinite;
+          }
+        .profile {
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 100px; 
+        padding: 15px;
+        }
+        .salutation{
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Inconsolata;
+        }
+        .text{
+        font-size: 14px;
+        }
+        .wave {
+          box-shadow:
+              -5px -5px 0 -0px var(--red),
+              5px 5px 0 -3px var(--red);
+          }
+            
+            
+          .wave {
+            float: left;
+            margin: 20px;
+            animation: wave  ease-in-out 0.5s infinite alternate;
+            transform-origin: center -36px;
+          }
+          
+          .wave:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+          }
+          
+          .wave img {
+            border: 5px solid #f8f8f8;
+            display: block;
+            width: 200px;
+            height: 250px;
+          }
+          
+          .wave figcaption {
+            text-align: center;
+          }
+          
+          .wave:after{
+            content: '';
+            position: absolute;
+            width: 18px; 
+            height: 12px;
+            border: 2px solid gray;
+            top: -17px; 
+            left: 50%;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(35deg);
+          }
+                  
+          .wave:before{
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 49%;
+            display: block;
+            height: 44px;
+            width: 47px;
+            background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            z-index: 16;
+          }
+                  
+          @keyframes wave {
+            0% { transform: rotate(0.5deg); }
+            100% { transform: rotate(-0.5deg); }
+          }
+        }
+           
+      @media screen  and (min-width: 1px) and (max-width:99px) {
+        .circle-container {
+          position: relative;
+          
+          left: 0.5%;
+          display: flex;
+          justify-content: center; 
+          align-items: center; 
+          } 
+          
+          .circle-image {
+          width: 8px; 
+          height: 8px; 
+          border-radius: 50%; 
+          background-image: url('../images/R.jpeg'); 
+          background-size: cover; 
+          animation: rotate 5s linear infinite;
+          }
+        .profile {
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 10px; 
+        padding: 15px;
+        }
+        .salutation{
+        font-size: 4px;
+        font-weight: bold;
+        font-family: Inconsolata;
+        }
+        .text{
+        font-size: 4px;
+        }
+        .wave {
+          box-shadow:
+              -5px -5px 0 -0px var(--red),
+              5px 5px 0 -3px var(--red);
           }
             
             

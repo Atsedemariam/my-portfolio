@@ -95,11 +95,9 @@ const FAQs = () => {
     "አይጥ ወልዳ ወልዳ... 😊"];
   return (
     <div className='container' style={toggle ? {backgroundColor: "#292929", color:"white"} : {}}>
-    {/* <div> */}
       {language === 'en' ? null : (showPopup && (
         <Popup message={text} onClose={handleClosePopup}  />
       ))}
-    {/* </div> */}
       <Header />
       <div className="scrollable-container-contact">
         <div className="faq-container">

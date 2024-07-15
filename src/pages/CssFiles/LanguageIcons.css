@@ -259,10 +259,22 @@
   }
   @keyframes moveClockwise {
     0% {
-      transform: translate(-55%, -55%) rotate(0deg) translateX(50px) translateY(200px) rotate(0deg);
+      transform: translate(-55%, -55%) rotate(0deg) translateX(50px) translateY(calc(250px + 0.02695 * (100vw - 1366px))) rotate(0deg);
     }
     100% {
-      transform: translate(-55%, -55%) rotate(360deg) translateX(50px) translateY(200px) rotate(-360deg);
+      transform: translate(-55%, -55%) rotate(360deg) translateX(50px) translateY(calc(250px + 0.02695 * (100vw - 1366px))) rotate(-360deg);
+
+    }
+  }
+  @media screen and (min-width: 1199px) and (max-width: 1366px) {
+   
+    @keyframes moveClockwise {
+      0% {
+        transform: translate(-55%, -55%) rotate(0deg) translateX(40px) translateY(200px) rotate(0deg);
+      }
+      100% {
+        transform: translate(-55%, -55%) rotate(360deg) translateX(40px) translateY(200px) rotate(-360deg);
+      }
     }
   }
   @media screen and (min-width: 999px) and (max-width: 1199px) {
@@ -364,7 +376,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -378,7 +390,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -392,7 +404,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -406,7 +418,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
 
   .language-css{
@@ -419,7 +431,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -433,7 +445,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -447,7 +459,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -461,7 +473,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -475,7 +487,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -489,7 +501,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -503,7 +515,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -517,7 +529,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
 
   .language-mongo{
@@ -530,7 +542,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
      
@@ -544,7 +556,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -558,7 +570,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -572,7 +584,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -586,7 +598,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
   
@@ -600,7 +612,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -614,7 +626,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
 
@@ -628,7 +640,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
   @media screen and (min-width: 1367px) {
   .language-confluence{
@@ -641,7 +653,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
     }
   
@@ -655,7 +667,7 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }
    
@@ -669,6 +681,6 @@
     height: var(--base-height-lan-lan);
     border-radius: var(--base-border-radius-lan-lan); 
     font-size: var(--base-font-size-lan-lan);
-    font-weight: bold;
+    /*font-weight: bold;*/
 
   }

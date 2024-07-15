@@ -15,7 +15,6 @@ const About = () => {
   const { language } = useLanguage();
   
   return (
-    
     <div className="container" style={toggle ? { "--red":"white", background: "#292929", boxShadow: " 0 0 10px rgba(255,255,255, 0.9)" } : {}}>
       <Header /> 
       <div className="scrollable-container">
@@ -98,7 +97,7 @@ const About = () => {
         <div className='graduating_hat' style={toggle ? { filter: 'brightness(0) invert(1)'} : {}}>
           <img className="image" src="../kk.png" alt=""/>
         </div>
-
+ 
         <div className='edu_1' style={toggle ? { background: '#414a4c' } : {}}>
             <p className='prof'> {languages[language].edu_1_prof}</p>
             <p className='date'>{languages[language].edu_1_date}</p>

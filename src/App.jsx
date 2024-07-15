@@ -4,7 +4,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import ContactMe from './pages/ContactMe';
 import FAQs from './pages/FAQ';
-import ScrollToTopTexyt from './pages/someotherthing';
+
+import Kk from './pages/sample';
+// import ScrollToTopTexyt from './pages/someotherthing';
 import { ThemeContext } from "./pages/themeContext";
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactMe />} />
           <Route path="/faqs" element={<FAQs />} />
-          <Route path="/sample" element={<ScrollToTopTexyt/>} />
+          <Route path="/sample" element={<Kk/>} />
         </Routes>
       </Router>
     </div>

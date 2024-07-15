@@ -6,7 +6,7 @@ import { ThemeContext } from "./themeContext";
 import './CssFiles/Footer.css'; 
 
 import { useLanguage } from './LanguageContext';
-import languages from './languages'; // Import the language file
+import languages from './languages'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTelegram, faXTwitter, faLinkedin, faGitlab, faMastodon } from '@fortawesome/free-brands-svg-icons';
 
@@ -15,27 +15,38 @@ export default function Contact() {
   const { toggle } = React.useContext(ThemeContext);
 
   const { language } = useLanguage();
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can add form validation logic here if needed
     const formData = new FormData(e.target);
     const name = formData.get('name');
     const email = formData.get('email');
     const subject = formData.get('subject');
     const message = formData.get('message');
 
-    if (!name || !email || !subject || !message) {
-      alert('Please fill out all fields before submitting.');
-      return;
+    try {
+      const response = await fetch('http://localhost:5000/submit-form', { 
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, email, subject, message })
+    });
+    
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log('Form submitted successfully:', data.message);
+      alert('your message is sent 😊!');
+      e.target.reset();
+    } catch (error) {
+      console.error('Error submitting form:', error.message);
+      alert('Failed to submit form. Please try again later.');
     }
-
-    // Example: Send data to backend or show success message
-    console.log('Form submitted:', { name, email, subject, message });
-    alert('Form submitted successfully!');
-
-    // Optionally reset form fields
-    e.target.reset();
   };
+  
   return (
     <div className="container" style={toggle ? {background: "#292929", color: "white"} : {}}>
       <Header />
@@ -89,7 +100,7 @@ export default function Contact() {
             </div>
         </div>
 
-        
+     
         <div className="contact-text">
           <p style={{ fontSize: language === 'en' ? "inherit" : "25px" }}>{languages[language].get_in_touch}</p>
         </div>

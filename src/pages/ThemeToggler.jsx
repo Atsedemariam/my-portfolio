@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "./themeContext";
 import SunImage from "./images/icons8-sun-50.png";
-import MoonImage from "./images/icons8-moon-50.png";
+import MoonImage from "./images/theme.png";
 import "./CssFiles/ThemeToggler.css"; // Import CSS file for button styling
 
 const ThemeToggler = () => {

@@ -18,6 +18,7 @@
   position: fixed; 
   width: 100%; 
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -27,6 +28,7 @@
   height: 100px;
   flex:none;
 }
+
 .buttons-container {
   display: flex;
 }
@@ -41,6 +43,20 @@
   background-color: transparent;
 }
 .button {
+  background-image: linear-gradient(
+    to right,
+    #195905,
+    #195905 50%,
+    #004225 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  color: inherit; 
+  text-decoration: none; 
+
+  position: relative;
   margin-right: calc(10px + 0.02195  * (100vw - 1366px));
   background-color: transparent;
   color: #004225; 
@@ -53,11 +69,28 @@
   cursor: pointer;
   transition: transform 0.3s ease; 
 }
-.button:hover {
-  background-color: #004225;
-  color: white; 
-  transform: translateY(-(calc(8px + 0.02195  * (100vw - 1366px)))); 
+.button:before {
+  content: '';
+  background: #004225;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
+
+.button:hover,
+.button.active {
+  background-position: 0;
+}
+
+.button:hover::before,
+.button.active::before {
+  width: 100%;
+}
+
 
 @media screen and (min-width: 1000px) and (max-width: 1366px) {
 .name_text{
@@ -72,6 +105,20 @@
 }
 
 .button {
+  background-image: linear-gradient(
+    to right,
+    #195905,
+    #195905 50%,
+    #004225 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  color: inherit; 
+  text-decoration: none; 
+  
+  position: relative;
   margin-right: 10px;
   background-color: transparent;
   color: #004225; 
@@ -84,11 +131,28 @@
   cursor: pointer;
   transition: transform 0.3s ease; 
 }
-.button:hover {
-  background-color: #004225;
-  color: white; 
-  transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+.button:before {
+  content: '';
+  background: #004225;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
+
+.button:hover,
+.button.active {
+  background-position: 0;
+}
+
+.button:hover::before,
+.button.active::before {
+  width: 100%;
+}
+
 
 
 }
@@ -106,6 +170,20 @@
   }
   
   .button {
+    background-image: linear-gradient(
+      to right,
+      #195905,
+      #195905 50%,
+      #004225 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    color: inherit; 
+    text-decoration: none; 
+    
+    position: relative;
     margin-right: 10px;
     background-color: transparent;
     color: #004225; 
@@ -118,11 +196,28 @@
     cursor: pointer;
     transition: transform 0.3s ease; 
   }
-  .button:hover {
-    background-color: #004225;
-    color: white; 
-    transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+  .button:before {
+    content: '';
+    background: #004225;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
   }
+  
+  .button:hover,
+  .button.active {
+    background-position: 0;
+  }
+  
+  .button:hover::before,
+  .button.active::before {
+    width: 100%;
+  }
+  
   .header_div {
     background-color: rgba(240, 255, 255, 0.93); 
     z-index: 100;
@@ -147,6 +242,20 @@
   }
   
   .button {
+    background-image: linear-gradient(
+      to right,
+      #195905,
+      #195905 50%,
+      #004225 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    color: inherit; 
+    text-decoration: none; 
+    
+    position: relative;
     margin-right: 10px;
     background-color: transparent;
     color: #004225; 
@@ -159,11 +268,28 @@
     cursor: pointer;
     transition: transform 0.3s ease; 
   }
-  .button:hover {
-    background-color: #004225;
-    color: white; 
-    transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+  .button:before {
+    content: '';
+    background: #004225;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
   }
+  
+  .button:hover,
+  .button.active {
+    background-position: 0;
+  }
+  
+  .button:hover::before,
+  .button.active::before {
+    width: 100%;
+  }
+  
   .header_div {
     background-color: rgba(240, 255, 255, 0.93); 
     z-index: 100;
@@ -188,6 +314,20 @@
   }
   
   .button {
+    background-image: linear-gradient(
+      to right,
+      #195905,
+      #195905 50%,
+      #004225 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    color: inherit; 
+    text-decoration: none; 
+    
+    position: relative;
     margin-right: 10px;
     background-color: transparent;
     color: #004225; 
@@ -200,11 +340,28 @@
     cursor: pointer;
     transition: transform 0.3s ease; 
   }
-  .button:hover {
-    background-color: #004225;
-    color: white; 
-    transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+  .button:before {
+    content: '';
+    background: #004225;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
   }
+  
+  .button:hover,
+  .button.active {
+    background-position: 0;
+  }
+  
+  .button:hover::before,
+  .button.active::before {
+    width: 100%;
+  }
+  
   .header_div {
     background-color: rgba(240, 255, 255, 0.93); 
     z-index: 100;
@@ -228,6 +385,20 @@
     }
     
     .button {
+      background-image: linear-gradient(
+        to right,
+        #195905,
+        #195905 50%,
+        #004225 50%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+      color: inherit; 
+      text-decoration: none; 
+      
+      position: relative;
       margin-right: 10px;
       background-color: transparent;
       color: #004225; 
@@ -240,11 +411,28 @@
       cursor: pointer;
       transition: transform 0.3s ease; 
     }
-    .button:hover {
-      background-color: #004225;
-      color: white; 
-      transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
-    }     
+    .button:before {
+      content: '';
+      background: #004225;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .button:hover,
+    .button.active {
+      background-position: 0;
+    }
+    
+    .button:hover::before,
+    .button.active::before {
+      width: 100%;
+    }
+      
     .header_div {
       background-color: rgba(240, 255, 255, 0.93); 
       z-index: 100;
@@ -254,7 +442,7 @@
     }
     }
 
-    @media screen and (min-width: 350px) and (max-width: 550px) {
+    @media screen and (min-width: 400px) and (max-width: 550px) {
       .name_text{
         display: none; 
         position: fixed;
@@ -267,6 +455,19 @@
       }
       
       .button {
+        background-image: linear-gradient(
+          to right,
+          #195905,
+          #195905 50%,
+          #004225 50%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        color: inherit; 
+        text-decoration: none; 
+        position: relative;
         margin-right: 10px;
         background-color: transparent;
         color: #004225; 
@@ -279,11 +480,28 @@
         cursor: pointer;
         transition: transform 0.3s ease; 
       }
-      .button:hover {
-        background-color: #004225;
-        color: white; 
-        transform: translateY(calc(-8px - 0.02195 * (100vw - 1366px))); 
+      .button:before {
+        content: '';
+        background: #004225;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
       }
+      
+      .button:hover,
+      .button.active {
+        background-position: 0;
+      }
+      
+      .button:hover::before,
+      .button.active::before {
+        width: 100%;
+      }
+      
       .header_div {
         background-color: rgba(240, 255, 255, 0.93); 
         z-index: 100;
@@ -295,4 +513,300 @@
         padding: 10px;;
       }
 
+    }
+
+    
+    @media screen and (min-width: 300px) and (max-width: 399px) {
+      .name_text{
+        display: none; 
+        position: fixed;
+        top: 25px;
+        left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ingrid Darling', cursive; 
+        background-color: transparent;
+      }
+      
+      .button {
+        background-image: linear-gradient(
+          to right,
+          #195905,
+          #195905 50%,
+          #004225 50%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        color: inherit; 
+        text-decoration: none; 
+        position: relative;
+        margin-right: 5px;
+        background-color: transparent;
+        color: #004225; 
+        font-size: 10px; 
+        font-weight: bold;
+        border: none;
+        margin-right: 22px;
+        padding: 0px 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+      }
+      .button:before {
+        content: '';
+        background: #004225;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .button:hover,
+      .button.active {
+        background-position: 0;
+      }
+      
+      .button:hover::before,
+      .button.active::before {
+        width: 100%;
+      }
+      
+      .header_div {
+        background-color: rgba(240, 255, 255, 0.93); 
+        z-index: 100;
+        top: 0;
+        height: 60px;
+        position: fixed; 
+      }
+      .header{
+        padding: 5px;;
+      }
+
+    }
+
+
+    
+    @media screen and (min-width: 200px) and (max-width: 299px) {
+      .name_text{
+        display: none; 
+        position: fixed;
+        top: 25px;
+        left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ingrid Darling', cursive; 
+        background-color: transparent;
+      }
+      
+      .button {
+        background-image: linear-gradient(
+          to right,
+          #195905,
+          #195905 50%,
+          #004225 50%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        color: inherit; 
+        text-decoration: none; 
+        position: relative;
+        margin-right: 5px;
+        background-color: transparent;
+        color: #004225; 
+        font-size: 7px; 
+        font-weight: bold;
+        border: none;
+        margin-right: 17px;
+        padding: 0px 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+      }
+      .button:before {
+        content: '';
+        background: #004225;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .button:hover,
+      .button.active {
+        background-position: 0;
+      }
+      
+      .button:hover::before,
+      .button.active::before {
+        width: 100%;
+      }
+      
+      .header_div {
+        background-color: rgba(240, 255, 255, 0.93); 
+        z-index: 100;
+        top: 0;
+        height: 60px;
+        position: fixed; 
+      }
+      .header{
+        padding: 5px;;
+      }
+
+    }
+
+
+    
+    @media screen and (min-width: 150px) and (max-width: 199px) {
+      .name_text{
+        display: none; 
+        position: fixed;
+        top: 25px;
+        left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ingrid Darling', cursive; 
+        background-color: transparent;
+      }
+      
+      .button {
+        background-image: linear-gradient(
+          to right,
+          #195905,
+          #195905 50%,
+          #004225 50%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        color: inherit; 
+        text-decoration: none; 
+        position: relative;
+        margin-right: 5px;
+        background-color: transparent;
+        color: #004225; 
+        font-size: 5px; 
+        font-weight: bold;
+        border: none;
+        margin-right: 12px;
+        padding: 0px 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+      }
+      .button:before {
+        content: '';
+        background: #004225;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .button:hover,
+      .button.active {
+        background-position: 0;
+      }
+      
+      .button:hover::before,
+      .button.active::before {
+        width: 100%;
+      }
+      
+      .header_div {
+        background-color: rgba(240, 255, 255, 0.93); 
+        z-index: 100;
+        top: 0;
+        height: 60px;
+        position: fixed; 
+      }
+      .header{
+        padding: 5px;;
+      }
+    }
+
+    
+    @media screen and (min-width: 10px) and (max-width: 149px) {
+      .name_text{
+        display: none; 
+        position: fixed;
+        top: 25px;
+        left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Ingrid Darling', cursive; 
+        background-color: transparent;
+      }
+      
+      .button {
+        background-image: linear-gradient(
+          to right,
+          #195905,
+          #195905 50%,
+          #004225 50%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        color: inherit; 
+        text-decoration: none; 
+        position: relative;
+        margin-right: 5px;
+        background-color: transparent;
+        color: #004225; 
+        font-size: 5px; 
+        font-weight: bold;
+        border: none;
+        margin-right: 5px;
+        padding: 0px 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+      }
+      .button:before {
+        content: '';
+        background: #004225;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .button:hover,
+      .button.active {
+        background-position: 0;
+      }
+      
+      .button:hover::before,
+      .button.active::before {
+        width: 100%;
+      }
+      
+      .header_div {
+        background-color: rgba(240, 255, 255, 0.93); 
+        z-index: 100;
+        top: 0;
+        height: 60px;
+        position: fixed; 
+      }
+      .header{
+        padding: 5px;;
+      }
     }
